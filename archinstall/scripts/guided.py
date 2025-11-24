@@ -119,6 +119,10 @@ def perform_installation(mountpoint: Path) -> None:
 			if config.auth_config.users:
 				installation.create_users(config.auth_config.users)
 				auth_handler.setup_auth(installation, config.auth_config, config.hostname)
+				for user in config.auth_config.users:
+					if user.username == 'root':
+						continue
+					installation.user_set_shell(user.username, "/bin/zsh")
 
 		if app_config := config.app_config:
 			application_handler.install_applications(installation, app_config)
