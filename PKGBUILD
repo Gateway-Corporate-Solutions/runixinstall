@@ -1,15 +1,11 @@
-# Maintainer: David Runge <dvzrv@archlinux.org>
-# Maintainer: Giancarlo Razzolini <grazzolini@archlinux.org>
-# Maintainer: Anton Hvornum <torxed@archlinux.org>
-# Contributor: Anton Hvornum <anton@hvornum.se>
-# Contributor: demostanis worlds <demostanis@protonmail.com>
+# Maintainer: Samuel Roux <sam@gatewaycorporate.org>
 
-pkgname=archinstall
-pkgver=3.0.13
+pkgname=runixinstall
+pkgver=0.0.1
 pkgrel=1
-pkgdesc="Just another guided/automated Arch Linux installer with a twist"
+pkgdesc="A modified archinstall built for Runix"
 arch=(any)
-url="https://github.com/archlinux/archinstall"
+url="https://github.com/Gateway-Corporate-Solutions/runixinstall"
 license=(GPL-3.0-only)
 depends=(
   'arch-install-scripts'
