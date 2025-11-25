@@ -1,1 +1,1 @@
-../archinstall/scripts/minimal.py
+runixinstall/scripts/minimal.py

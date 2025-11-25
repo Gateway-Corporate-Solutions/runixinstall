@@ -1,1 +1,1 @@
-../archinstall/scripts/only_hd.py
+runixinstall/scripts/only_hd.py

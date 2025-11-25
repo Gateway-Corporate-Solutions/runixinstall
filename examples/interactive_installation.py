@@ -1,1 +1,1 @@
-../archinstall/scripts/guided.py
+runixinstall/scripts/guided.py
