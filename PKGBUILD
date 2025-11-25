@@ -47,8 +47,7 @@ optdepends=(
 )
 provides=(runixinstall-git)
 source=(runixinstall-git::git+https://github.com/Gateway-Corporate-Solutions/runixinstall)
-sha512sums=()
-b2sums=()
+md5sums=('SKIP')
 
 check() {
   cd runixinstall-git
