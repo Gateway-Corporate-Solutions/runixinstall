@@ -36,11 +36,13 @@ class DesktopProfile(Profile):
 			'smartmontools',
 			'xdg-utils',
 			'yay',
-			'oh-my-zsh-git',
 			'zsh-syntax-highlighting-git',
 			'eza',
 			'zoxide',
-			'pfetch'
+			'pfetch',
+			'curl',
+			'git',
+			'nerd-fonts'
 		]
 
 	@property
