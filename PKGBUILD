@@ -1,6 +1,6 @@
 # Maintainer: Samuel Roux <sam@gatewaycorporate.org>
 
-pkgname=runixinstall
+pkgname=runixinstall-git
 pkgver=0.0.1
 pkgrel=1
 pkgdesc="A modified archinstall built for Runix"
@@ -45,33 +45,31 @@ makedepends=(
 optdepends=(
   'python-systemd: Adds journald logging'
 )
-provides=(python-archinstall archinstall)
-conflicts=(python-archinstall archinstall-git)
-replaces=(python-archinstall archinstall-git)
-source=(runixinstall::git://github.com/Gateway-Corporate-Solutions/runixinstall.git)
+provides=(runixinstall-git)
+source=(runixinstall-git::git://github.com/Gateway-Corporate-Solutions/runixinstall.git)
 sha512sums=()
 b2sums=()
 
 check() {
-  cd runixinstall
+  cd runixinstall-git
   ruff check
 }
 
 pkgver() {
-  cd runixinstall
+  cd runixinstall-git
 
   awk '$1 ~ /^__version__/ {gsub("\"", ""); print $3}' archinstall/__init__.py
 }
 
 build() {
-  cd runixinstall
+  cd runixinstall-git
 
   python -m build --wheel --no-isolation
   PYTHONDONTWRITEBYTECODE=1 make man -C docs
 }
 
 package() {
-  cd runixinstall
+  cd runixinstall-git
 
   python -m installer --destdir="$pkgdir" dist/*.whl
   install -vDm 644 docs/_build/man/archinstall.1 -t "$pkgdir/usr/share/man/man1/"
