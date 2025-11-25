@@ -133,9 +133,9 @@ def perform_installation(mountpoint: Path) -> None:
 				for user in config.auth_config.users:
 					if user.username == 'root':
 						continue
-					installation.user_set_shell(user.username, "/bin/zsh")
+					os.system(f"arch-chroot -S /mnt usermod --shell /bin/zsh {user.username}")
 					os.system(f"cp -r /etc/userdefaults/* /mnt/home/{user.username}/")
-					os.system(f"chown -R {user.username}:{user.username} /mnt/home/{user.username}/")
+					os.system(f"arch-chroot -S /mnt chown -R {user.username}:{user.username} /home/{user.username}/")
 
 		if app_config := config.app_config:
 			application_handler.install_applications(installation, app_config)
