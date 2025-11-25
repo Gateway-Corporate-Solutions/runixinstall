@@ -134,7 +134,6 @@ def perform_installation(mountpoint: Path) -> None:
 					if user.username == 'root':
 						continue
 					os.system(f"arch-chroot -S /mnt usermod --shell /bin/zsh {user.username}")
-					os.system(f"arch-chroot -S /mnt sudo -u {user.username} sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"")
 					os.system(f"cp -r /usr/share/defaults/. /mnt/home/{user.username}/")
 					os.system(f"arch-chroot -S /mnt chown -R {user.username}:{user.username} /home/{user.username}/")
 
