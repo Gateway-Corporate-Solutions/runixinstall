@@ -46,7 +46,7 @@ optdepends=(
   'python-systemd: Adds journald logging'
 )
 provides=(runixinstall-git)
-source=(runixinstall-git::ssh://git@github.com:Gateway-Corporate-Solutions/runixinstall)
+source=(runixinstall-git::git+https://github.com/Gateway-Corporate-Solutions/runixinstall)
 sha512sums=()
 b2sums=()
 
