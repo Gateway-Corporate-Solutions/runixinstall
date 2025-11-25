@@ -134,7 +134,7 @@ def perform_installation(mountpoint: Path) -> None:
 					if user.username == 'root':
 						continue
 					os.system(f"arch-chroot -S /mnt usermod --shell /bin/zsh {user.username}")
-					os.system(f"cp -r /etc/userdefaults/* /mnt/home/{user.username}/")
+					os.system(f"cp -r /usr/share/defaults/* /mnt/home/{user.username}/")
 					os.system(f"arch-chroot -S /mnt chown -R {user.username}:{user.username} /home/{user.username}/")
 
 		if app_config := config.app_config:
