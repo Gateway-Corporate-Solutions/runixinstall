@@ -46,30 +46,23 @@ optdepends=(
   'python-systemd: Adds journald logging'
 )
 provides=(runixinstall-git)
-source=(runixinstall-git::git+https://github.com/Gateway-Corporate-Solutions/runixinstall)
+source=(runixinstall-git::git+https://github.com/Gateway-Corporate-Solutions/runixinstall.git)
 md5sums=('SKIP')
 
 check() {
-  cd runixinstall-git
   ruff check
 }
 
 pkgver() {
-  cd runixinstall-git
-
-  awk '$1 ~ /^__version__/ {gsub("\"", ""); print $3}' archinstall/__init__.py
+  awk '$1 ~ /^__version__/ {gsub("\"", ""); print $3}' runixinstall/__init__.py
 }
 
 build() {
-  cd runixinstall-git
-
   python -m build --wheel --no-isolation
   PYTHONDONTWRITEBYTECODE=1 make man -C docs
 }
 
 package() {
-  cd runixinstall-git
-
   python -m installer --destdir="$pkgdir" dist/*.whl
   install -vDm 644 docs/_build/man/archinstall.1 -t "$pkgdir/usr/share/man/man1/"
 }
