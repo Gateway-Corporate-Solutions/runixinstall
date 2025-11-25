@@ -1,7 +1,7 @@
 # Maintainer: Samuel Roux <sam@gatewaycorporate.org>
 
 pkgname=runixinstall-git
-pkgver=0.0.1
+pkgver=0.0.2
 pkgrel=1
 pkgdesc="A modified runixinstall built for Runix"
 arch=(any)
