@@ -93,10 +93,10 @@ def perform_installation(mountpoint: Path) -> None:
 			locale_config=locale_config,
 		)
 
-		installation.run_command("cp /etc/pacman.conf /mnt/etc/pacman.conf")
-		installation.run_command("mkdir -p /mnt/etc/repos")
-		installation.run_command("cp -r /etc/repos/* /mnt/etc/repos/")
-		installation.run_command("cp -r /etc/skel/* /mnt/etc/skel/")
+		os.system("cp /etc/pacman.conf /mnt/etc/pacman.conf")
+		os.system("mkdir -p /mnt/etc/repos")
+		os.system("cp -r /etc/repos/* /mnt/etc/repos/")
+		os.system("cp -r /etc/skel/* /mnt/etc/skel/")
 
 		if mirror_config := config.mirror_config:
 			installation.set_mirrors(mirror_config, on_target=True)
@@ -107,9 +107,9 @@ def perform_installation(mountpoint: Path) -> None:
 		if config.bootloader_config and config.bootloader_config.bootloader != Bootloader.NO_BOOTLOADER:
 			if config.bootloader_config.bootloader == Bootloader.Grub and SysInfo.has_uefi():
 				installation.add_additional_packages('grub')
-				installation.run_command('mkdir -p /mnt/usr/share/grub/themes')
-				installation.run_command('cp -r /usr/share/grub/themes/fluent /mnt/usr/share/grub/themes/fluent')
-				installation.run_command('cp /etc/default/grub /mnt/etc/default/grub')
+				os.system('mkdir -p /mnt/usr/share/grub/themes')
+				os.system('cp -r /usr/share/grub/themes/fluent /mnt/usr/share/grub/themes/fluent')
+				os.system('cp /etc/default/grub /mnt/etc/default/grub')
 
 			installation.add_bootloader(config.bootloader_config.bootloader, config.bootloader_config.uki, config.bootloader_config.removable)
 
