@@ -35,6 +35,12 @@ class DesktopProfile(Profile):
 			'wpa_supplicant',
 			'smartmontools',
 			'xdg-utils',
+			'yay',
+			'oh-my-zsh-git',
+			'zsh-syntax-highlighting-git',
+			'eza',
+			'zoxide',
+			'pfetch'
 		]
 
 	@property
