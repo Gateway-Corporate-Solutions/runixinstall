@@ -4,7 +4,7 @@ import sys
 from enum import Enum, auto
 from typing import TYPE_CHECKING
 
-from archinstall.lib.translationhandler import tr
+from runixinstall.lib.translationhandler import tr
 
 if TYPE_CHECKING:
 	from ..lib.installer import Installer
@@ -102,7 +102,7 @@ class Profile:
 		Used to control if the Profile() should be visible or not in different contexts.
 		Returns True if --advanced is given on a Profile(advanced=True) instance.
 		"""
-		from archinstall.lib.args import arch_config_handler
+		from runixinstall.lib.args import arch_config_handler
 
 		return self.advanced is False or arch_config_handler.args.advanced is True
 

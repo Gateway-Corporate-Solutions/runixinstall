@@ -14,8 +14,8 @@ msgstr ""
 msgid "[!] A log file has been created here: {} {}"
 msgstr "[!] 로그파일을 다음의 경로에 생성했습니다: {} {}"
 
-msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    이 문제(및 파일)를 https://github.com/archlinux/archinstall/issues 에 제출하세요"
+msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    이 문제(및 파일)를 https://github.com/archlinux/runixinstall/issues 에 제출하세요"
 
 msgid "Do you really want to abort?"
 msgstr "정말 중단하시겠습니까?"
@@ -169,8 +169,8 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr "파티션에 대해 원하는 파일 시스템을 입력하세요: "
 
-msgid "Archinstall language"
-msgstr "Archinstall 언어"
+msgid "runixinstall language"
+msgstr "runixinstall 언어"
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
 msgstr "선택한 모든 드라이브를 지우고 최선의 기본 파티션 레이아웃 사용"
@@ -301,12 +301,12 @@ msgstr "설치 ({} 개의 설정(들)이 누락됨)"
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 "하드 드라이브 선택을 건너뛰기로 결정했습니다\n"
 "{} 에 마운트된 모든 드라이브 설정을 사용합니다 (실험적).\n"
-"경고: Archinstall은 이 설정의 적합성을 확인하지 않습니다.\n"
+"경고: runixinstall은 이 설정의 적합성을 확인하지 않습니다.\n"
 "계속하시겠습니까?"
 
 msgid "Re-using partition instance: {}"
@@ -445,8 +445,8 @@ msgstr ""
 msgid "Pacman is already running, waiting maximum 10 minutes for it to terminate."
 msgstr "Pacman 이 이미 실행중입니다, 종료될 때까지 최대 10분 대기해야 합니다."
 
-msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall."
-msgstr "기존 pacman 잠금이 종료되지 않았습니다. archinstall을 사용하기 전에 기존 pacman 세션을 모두 정리하세요."
+msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall."
+msgstr "기존 pacman 잠금이 종료되지 않았습니다. runixinstall을 사용하기 전에 기존 pacman 세션을 모두 정리하세요."
 
 msgid "Choose which optional additional repositories to enable"
 msgstr "활성화할 선택적 추가 리포지토리를 선택하세요"
@@ -839,7 +839,7 @@ msgstr "이 번역을 사용하려면 해당 언어를 지원하는 글꼴을 �
 msgid "The font should be stored as {}"
 msgstr "글꼴은 {} (으)로 저장해야 합니다"
 
-msgid "Archinstall requires root privileges to run. See --help for more."
+msgid "runixinstall requires root privileges to run. See --help for more."
 msgstr ""
 
 #, fuzzy
@@ -1300,7 +1300,7 @@ msgstr ""
 msgid "Waiting for time sync (timedatectl show) to complete."
 msgstr ""
 
-msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
+msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
 msgstr ""
 
 msgid "Skipping waiting for automatic time sync (this can cause issues if time is out of sync during installation)"
@@ -1313,7 +1313,7 @@ msgstr ""
 msgid "Selected profiles: "
 msgstr "인터페이스 제거"
 
-msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
+msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
 msgstr ""
 
 #, fuzzy
@@ -1403,8 +1403,8 @@ msgid "No"
 msgstr ""
 
 #, fuzzy
-msgid "Archinstall help"
-msgstr "Archinstall 언어"
+msgid "runixinstall help"
+msgstr "runixinstall 언어"
 
 #, fuzzy
 msgid " (default)"
@@ -1574,8 +1574,8 @@ msgid "Disabled"
 msgstr ""
 
 #, fuzzy
-msgid "Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    이 문제(및 파일)를 https://github.com/archlinux/archinstall/issues 에 제출하세요"
+msgid "Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    이 문제(및 파일)를 https://github.com/archlinux/runixinstall/issues 에 제출하세요"
 
 #, fuzzy
 msgid "Mirror name"
@@ -1793,8 +1793,8 @@ msgid "Package group:"
 msgstr ""
 
 #, fuzzy
-msgid "Exit archinstall"
-msgstr "Archinstall 언어"
+msgid "Exit runixinstall"
+msgstr "runixinstall 언어"
 
 msgid "Reboot system"
 msgstr ""

@@ -1,10 +1,10 @@
 from pathlib import Path
 
-from archinstall.default_profiles.minimal import MinimalProfile
-from archinstall.lib.disk.device_handler import device_handler
-from archinstall.lib.disk.filesystem import FilesystemHandler
-from archinstall.lib.installer import Installer
-from archinstall.lib.models.device import (
+from runixinstall.default_profiles.minimal import MinimalProfile
+from runixinstall.lib.disk.device_handler import device_handler
+from runixinstall.lib.disk.filesystem import FilesystemHandler
+from runixinstall.lib.installer import Installer
+from runixinstall.lib.models.device import (
 	DeviceModification,
 	DiskEncryption,
 	DiskLayoutConfiguration,
@@ -18,9 +18,9 @@ from archinstall.lib.models.device import (
 	Size,
 	Unit,
 )
-from archinstall.lib.models.profile import ProfileConfiguration
-from archinstall.lib.models.users import Password, User
-from archinstall.lib.profile.profiles_handler import profile_handler
+from runixinstall.lib.models.profile import ProfileConfiguration
+from runixinstall.lib.models.users import Password, User
+from runixinstall.lib.profile.profiles_handler import profile_handler
 
 # we're creating a new ext4 filesystem installation
 fs_type = FilesystemType('ext4')
@@ -112,5 +112,5 @@ with Installer(
 profile_config = ProfileConfiguration(MinimalProfile())
 profile_handler.install_profile_config(installation, profile_config)
 
-user = User('archinstall', Password(plaintext='password'), True)
+user = User('runixinstall', Password(plaintext='password'), True)
 installation.create_users(user)

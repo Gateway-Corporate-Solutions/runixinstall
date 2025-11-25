@@ -1,5 +1,5 @@
 {
-  "archinstall-language": "English",
+  "runixinstall-language": "English",
   "audio_config": {
     "audio": "pipewire"
   },

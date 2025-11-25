@@ -12,7 +12,7 @@ import parted
 from parted import Disk, Geometry, Partition
 from pydantic import BaseModel, Field, ValidationInfo, field_serializer, field_validator
 
-from archinstall.lib.translationhandler import tr
+from runixinstall.lib.translationhandler import tr
 
 from ..hardware import SysInfo
 from ..models.users import Password
@@ -86,7 +86,7 @@ class DiskLayoutConfiguration:
 		disk_config: _DiskLayoutConfigurationSerialization,
 		enc_password: Password | None = None,
 	) -> DiskLayoutConfiguration | None:
-		from archinstall.lib.disk.device_handler import device_handler
+		from runixinstall.lib.disk.device_handler import device_handler
 
 		device_modifications: list[DeviceModification] = []
 		config_type = disk_config.get('config_type', None)

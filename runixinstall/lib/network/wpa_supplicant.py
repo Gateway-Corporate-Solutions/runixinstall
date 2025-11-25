@@ -1,8 +1,8 @@
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from archinstall.lib.models.network import WifiNetwork
-from archinstall.lib.output import debug
+from runixinstall.lib.models.network import WifiNetwork
+from runixinstall.lib.output import debug
 
 
 @dataclass

@@ -1,12 +1,12 @@
 import copy
 from typing import cast
 
-from archinstall.lib.menu.menu_helper import MenuHelper
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import SelectMenu
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
-from archinstall.tui.result import ResultType
-from archinstall.tui.types import Alignment
+from runixinstall.lib.menu.menu_helper import MenuHelper
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import SelectMenu
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.tui.result import ResultType
+from runixinstall.tui.types import Alignment
 
 
 class ListManager[ValueT]:

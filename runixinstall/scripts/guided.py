@@ -1,27 +1,27 @@
 import os
 from pathlib import Path
 
-from archinstall import SysInfo
-from archinstall.lib.applications.application_handler import application_handler
-from archinstall.lib.args import arch_config_handler
-from archinstall.lib.authentication.authentication_handler import auth_handler
-from archinstall.lib.configuration import ConfigurationOutput
-from archinstall.lib.disk.filesystem import FilesystemHandler
-from archinstall.lib.disk.utils import disk_layouts
-from archinstall.lib.global_menu import GlobalMenu
-from archinstall.lib.installer import Installer, accessibility_tools_in_use, run_custom_user_commands
-from archinstall.lib.interactions.general_conf import PostInstallationAction, ask_post_installation
-from archinstall.lib.models import Bootloader
-from archinstall.lib.models.device import (
+from runixinstall import SysInfo
+from runixinstall.lib.applications.application_handler import application_handler
+from runixinstall.lib.args import arch_config_handler
+from runixinstall.lib.authentication.authentication_handler import auth_handler
+from runixinstall.lib.configuration import ConfigurationOutput
+from runixinstall.lib.disk.filesystem import FilesystemHandler
+from runixinstall.lib.disk.utils import disk_layouts
+from runixinstall.lib.global_menu import GlobalMenu
+from runixinstall.lib.installer import Installer, accessibility_tools_in_use, run_custom_user_commands
+from runixinstall.lib.interactions.general_conf import PostInstallationAction, ask_post_installation
+from runixinstall.lib.models import Bootloader
+from runixinstall.lib.models.device import (
 	DiskLayoutType,
 	EncryptionType,
 )
-from archinstall.lib.models.users import User
-from archinstall.lib.output import debug, error, info
-from archinstall.lib.packages.packages import check_package_upgrade
-from archinstall.lib.profile.profiles_handler import profile_handler
-from archinstall.lib.translationhandler import tr
-from archinstall.tui import Tui
+from runixinstall.lib.models.users import User
+from runixinstall.lib.output import debug, error, info
+from runixinstall.lib.packages.packages import check_package_upgrade
+from runixinstall.lib.profile.profiles_handler import profile_handler
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui import Tui
 
 
 def ask_user_questions() -> None:
@@ -33,7 +33,7 @@ def ask_user_questions() -> None:
 
 	title_text = None
 
-	upgrade = check_package_upgrade('archinstall')
+	upgrade = check_package_upgrade('runixinstall')
 	if upgrade:
 		text = tr('New version available') + f': {upgrade}'
 		title_text = f'  ({text})'

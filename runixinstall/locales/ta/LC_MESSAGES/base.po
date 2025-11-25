@@ -14,8 +14,8 @@ msgstr ""
 msgid "[!] A log file has been created here: {} {}"
 msgstr "[!] ஒரு பதிவு கோப்பு இங்கே உருவாக்கப்பட்டது: {} {}"
 
-msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr " இந்த சிக்கல் (மற்றும் கோப்பை) https://github.com/archlinux/archinstall/issues க்கு சமர்ப்பிக்கவும்"
+msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr " இந்த சிக்கல் (மற்றும் கோப்பை) https://github.com/archlinux/runixinstall/issues க்கு சமர்ப்பிக்கவும்"
 
 msgid "Do you really want to abort?"
 msgstr "நீங்கள் உண்மையிலேயே கைவிட விரும்புகிறீர்களா?"
@@ -169,8 +169,8 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr "பகிர்வுக்கு தேவையான கோப்பு முறைமை வகையை உள்ளிடவும்: "
 
-msgid "Archinstall language"
-msgstr "Archinstall மொழி"
+msgid "runixinstall language"
+msgstr "runixinstall மொழி"
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
 msgstr "தேர்ந்தெடுக்கப்பட்ட அனைத்து இயக்கிகளையும் துடைத்து, சிறந்த முயற்சி இயல்புநிலை பகிர்வு அமைப்பைப் பயன்படுத்தவும்"
@@ -301,12 +301,12 @@ msgstr "நிறுவு ({} கட்டமைப்பு(கள்) இல�
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 "ஹார்ட் டிரைவ் தேர்வைத் தவிர்க்க முடிவு செய்துள்ளீர்கள்\n"
 "மற்றும் {} (சோதனை) இல் ஏற்றப்பட்ட எந்த இயக்கி அமைப்பையும் பயன்படுத்தும்\n"
-"எச்சரிக்கை: இந்த அமைப்பின் பொருத்தத்தை Archinstall சரிபார்க்காது\n"
+"எச்சரிக்கை: இந்த அமைப்பின் பொருத்தத்தை runixinstall சரிபார்க்காது\n"
 "நீங்கள் தொடர விரும்புகிறீர்களா?"
 
 msgid "Re-using partition instance: {}"
@@ -445,8 +445,8 @@ msgstr ""
 msgid "Pacman is already running, waiting maximum 10 minutes for it to terminate."
 msgstr "பேக்மேன் ஏற்கனவே இயங்கி வருகிறது, அது முடிவடைவதற்கு அதிகபட்சம் 10 நிமிடங்கள் காத்திருக்கிறது."
 
-msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall."
-msgstr "முன்பே இருக்கும் பேக்மேன் பூட்டு ஒருபோதும் வெளியேறவில்லை. archinstall ஐப் பயன்படுத்துவதற்கு முன், ஏற்கனவே உள்ள பேக்மேன் அமர்வுகளை சுத்தம் செய்யவும்."
+msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall."
+msgstr "முன்பே இருக்கும் பேக்மேன் பூட்டு ஒருபோதும் வெளியேறவில்லை. runixinstall ஐப் பயன்படுத்துவதற்கு முன், ஏற்கனவே உள்ள பேக்மேன் அமர்வுகளை சுத்தம் செய்யவும்."
 
 msgid "Choose which optional additional repositories to enable"
 msgstr "எந்த விருப்ப கூடுதல் களஞ்சியங்களை இயக்க வேண்டும் என்பதை தேர்வு செய்யவும்"
@@ -838,8 +838,8 @@ msgstr "இந்த மொழிபெயர்ப்பைப் பயன்�
 msgid "The font should be stored as {}"
 msgstr "எழுத்துரு {} ஆக சேமிக்கப்பட வேண்டும்"
 
-msgid "Archinstall requires root privileges to run. See --help for more."
-msgstr "Archinstall ஐ இயக்க ரூட் சிறப்புரிமைகள் தேவை. மேலும் பார்க்க --help."
+msgid "runixinstall requires root privileges to run. See --help for more."
+msgstr "runixinstall ஐ இயக்க ரூட் சிறப்புரிமைகள் தேவை. மேலும் பார்க்க --help."
 
 msgid "Select an execution mode"
 msgstr "செயல்படுத்தும் பயன்முறையைத் தேர்ந்தெடுக்கவும்"
@@ -1254,8 +1254,8 @@ msgstr "ஒருங்கிணைந்த கர்னல் படங்க�
 msgid "Waiting for time sync (timedatectl show) to complete."
 msgstr "நேர ஒத்திசைவு (timedatectl show) முடிவடைவதற்காகக் காத்திருக்கிறது."
 
-msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "நேர ஒத்திசைவு முடிவடையவில்லை, நீங்கள் காத்திருக்கும் போது - தீர்வுக்கான ஆவணங்களைச் சரிபார்க்கவும்: https://archinstall.readthedocs.io/"
+msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "நேர ஒத்திசைவு முடிவடையவில்லை, நீங்கள் காத்திருக்கும் போது - தீர்வுக்கான ஆவணங்களைச் சரிபார்க்கவும்: https://runixinstall.readthedocs.io/"
 
 msgid "Skipping waiting for automatic time sync (this can cause issues if time is out of sync during installation)"
 msgstr "தானியங்கி நேர ஒத்திசைவுக்காக காத்திருப்பதைத் தவிர்த்தல் (நிறுவலின் போது நேரம் ஒத்திசைக்கப்படாவிட்டால் இது சிக்கல்களை ஏற்படுத்தும்)"
@@ -1266,8 +1266,8 @@ msgstr "ஆர்ச் லினக்ஸ் கீரிங் ஒத்தி
 msgid "Selected profiles: "
 msgstr "தேர்ந்தெடுக்கப்பட்ட சுயவிவரங்கள்: "
 
-msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "நேரம் ஒத்திசைவு முடிவடையவில்லை, நீங்கள் காத்திருக்கும் போது - தீர்வுகளுக்கான ஆவணங்களைச் சரிபார்க்கவும்: https://archinstall.readthedocs.io/"
+msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "நேரம் ஒத்திசைவு முடிவடையவில்லை, நீங்கள் காத்திருக்கும் போது - தீர்வுகளுக்கான ஆவணங்களைச் சரிபார்க்கவும்: https://runixinstall.readthedocs.io/"
 
 msgid "Mark/Unmark as nodatacow"
 msgstr "nodatacow குறி/குறிநீக்கு"
@@ -1342,8 +1342,8 @@ msgstr "ஆமாம்"
 msgid "No"
 msgstr "இல்லை"
 
-msgid "Archinstall help"
-msgstr "Archinstall உதவி"
+msgid "runixinstall help"
+msgstr "runixinstall உதவி"
 
 msgid " (default)"
 msgstr "(இயல்புநிலை)"
@@ -1524,8 +1524,8 @@ msgid "Disabled"
 msgstr ""
 
 #, fuzzy
-msgid "Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr " இந்த சிக்கல் (மற்றும் கோப்பை) https://github.com/archlinux/archinstall/issues க்கு சமர்ப்பிக்கவும்"
+msgid "Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr " இந்த சிக்கல் (மற்றும் கோப்பை) https://github.com/archlinux/runixinstall/issues க்கு சமர்ப்பிக்கவும்"
 
 #, fuzzy
 msgid "Mirror name"
@@ -1760,8 +1760,8 @@ msgid "Package group:"
 msgstr ""
 
 #, fuzzy
-msgid "Exit archinstall"
-msgstr "Archinstall உதவி"
+msgid "Exit runixinstall"
+msgstr "runixinstall உதவி"
 
 #, fuzzy
 msgid "Reboot system"

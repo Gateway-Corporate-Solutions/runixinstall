@@ -1,15 +1,15 @@
 from typing import TYPE_CHECKING, override
 
-from archinstall.default_profiles.profile import Profile, ProfileType, SelectResult
-from archinstall.lib.output import info
-from archinstall.lib.profile.profiles_handler import profile_handler
-from archinstall.tui.curses_menu import SelectMenu
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
-from archinstall.tui.result import ResultType
-from archinstall.tui.types import FrameProperties, PreviewStyle
+from runixinstall.default_profiles.profile import Profile, ProfileType, SelectResult
+from runixinstall.lib.output import info
+from runixinstall.lib.profile.profiles_handler import profile_handler
+from runixinstall.tui.curses_menu import SelectMenu
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.tui.result import ResultType
+from runixinstall.tui.types import FrameProperties, PreviewStyle
 
 if TYPE_CHECKING:
-	from archinstall.lib.installer import Installer
+	from runixinstall.lib.installer import Installer
 
 
 class ServerProfile(Profile):

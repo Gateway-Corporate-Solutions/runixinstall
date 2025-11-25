@@ -13,10 +13,10 @@ from subprocess import CalledProcessError
 from types import TracebackType
 from typing import Any
 
-from archinstall.lib.disk.device_handler import device_handler
-from archinstall.lib.disk.fido import Fido2
-from archinstall.lib.disk.utils import get_lsblk_by_mountpoint, get_lsblk_info
-from archinstall.lib.models.device import (
+from runixinstall.lib.disk.device_handler import device_handler
+from runixinstall.lib.disk.fido import Fido2
+from runixinstall.lib.disk.utils import get_lsblk_by_mountpoint, get_lsblk_info
+from runixinstall.lib.models.device import (
 	DiskEncryption,
 	DiskLayoutConfiguration,
 	EncryptionType,
@@ -29,10 +29,10 @@ from archinstall.lib.models.device import (
 	SubvolumeModification,
 	Unit,
 )
-from archinstall.lib.models.packages import Repository
-from archinstall.lib.packages import installed_package
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import Tui
+from runixinstall.lib.models.packages import Repository
+from runixinstall.lib.packages import installed_package
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import Tui
 
 from .args import arch_config_handler
 from .exceptions import DiskError, HardwareIncompatibilityError, RequirementError, ServiceException, SysCallError
@@ -68,7 +68,7 @@ class Installer:
 	):
 		"""
 		`Installer()` is the wrapper for most basic installation steps.
-		It also wraps :py:func:`~archinstall.Installer.pacstrap` among other things.
+		It also wraps :py:func:`~runixinstall.Installer.pacstrap` among other things.
 		"""
 		self._base_packages = base_packages or __packages__[:3]
 		self.kernels = kernels or ['linux']
@@ -134,7 +134,7 @@ class Installer:
 			# We avoid printing /mnt/<log path> because that might confuse people if they note it down
 			# and then reboot, and a identical log file will be found in the ISO medium anyway.
 			Tui.print(str(tr('[!] A log file has been created here: {}').format(logger.path)))
-			Tui.print(tr('Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues'))
+			Tui.print(tr('Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues'))
 
 			# Return None to propagate the exception
 			return None
@@ -153,7 +153,7 @@ class Installer:
 				warn(f' - {step}')
 
 			warn(f'Detailed error logs can be found at: {logger.directory}')
-			warn('Submit this zip file as an issue to https://github.com/archlinux/archinstall/issues')
+			warn('Submit this zip file as an issue to https://github.com/archlinux/runixinstall/issues')
 
 			self.sync_log_to_install_medium()
 			return False
@@ -185,7 +185,7 @@ class Installer:
 			while True:
 				if not notified and time.time() - started_wait > 5:
 					notified = True
-					warn(tr('Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/'))
+					warn(tr('Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/'))
 
 				time_val = SysCommand('timedatectl show --property=NTPSynchronized --value').decode()
 				if time_val and time_val.strip() == 'yes':
@@ -804,7 +804,7 @@ class Installer:
 		if (pkg := fs_type.installation_pkg) is not None:
 			self._base_packages.append(pkg)
 
-		# https://github.com/archlinux/archinstall/issues/1837
+		# https://github.com/archlinux/runixinstall/issues/1837
 		if fs_type.fs_type_mount == 'btrfs':
 			self._disable_fstrim = True
 
@@ -859,7 +859,7 @@ class Installer:
 			(self.target / 'boot' / ucode).unlink(missing_ok=True)
 			self._base_packages.append(ucode.stem)
 		else:
-			debug('Archinstall will not install any ucode.')
+			debug('runixinstall will not install any ucode.')
 
 		debug(f'Optional repositories: {optional_repositories}')
 
@@ -877,9 +877,9 @@ class Installer:
 		# having no adverse effect on other devices. Most distributions enable
 		# periodic TRIM by default.
 		#
-		# https://github.com/archlinux/archinstall/issues/880
-		# https://github.com/archlinux/archinstall/issues/1837
-		# https://github.com/archlinux/archinstall/issues/1841
+		# https://github.com/archlinux/runixinstall/issues/880
+		# https://github.com/archlinux/runixinstall/issues/1837
+		# https://github.com/archlinux/runixinstall/issues/1841
 		if not self._disable_fstrim:
 			self.enable_periodic_trim()
 
@@ -965,7 +965,7 @@ class Installer:
 			info('Setting up swap on zram')
 			self.pacman.strap('zram-generator')
 
-			# We could use the default example below, but maybe not the best idea: https://github.com/archlinux/archinstall/pull/678#issuecomment-962124813
+			# We could use the default example below, but maybe not the best idea: https://github.com/archlinux/runixinstall/pull/678#issuecomment-962124813
 			# zram_example_location = '/usr/share/doc/zram-generator/zram-generator.conf.example'
 			# shutil.copy2(f"{self.target}{zram_example_location}", f"{self.target}/usr/lib/systemd/zram-generator.conf")
 			with open(f'{self.target}/etc/systemd/zram-generator.conf', 'w') as zram_conf:
@@ -975,7 +975,7 @@ class Installer:
 
 			self._zram_enabled = True
 		else:
-			raise ValueError('Archinstall currently only supports setting up swap on zram')
+			raise ValueError('runixinstall currently only supports setting up swap on zram')
 
 	def _get_efi_partition(self) -> PartitionModification | None:
 		for layout in self._disk_config.device_modifications:
@@ -1051,7 +1051,7 @@ class Installer:
 				# Note: UUID must be used, not PARTUUID for sd-encrypt to work
 				kernel_parameters.append(f'rd.luks.name={root_partition.uuid}=root')
 				# Note: tpm2-device and fido2-device don't play along very well:
-				# https://github.com/archlinux/archinstall/pull/1196#issuecomment-1129715645
+				# https://github.com/archlinux/runixinstall/pull/1196#issuecomment-1129715645
 				kernel_parameters.append('rd.luks.options=fido2-device=auto,password-echo=no')
 			elif partuuid:
 				debug(f'Root partition is an encrypted device, identifying by PARTUUID: {root_partition.partuuid}')
@@ -1125,7 +1125,7 @@ class Installer:
 			kernel_parameters = self._get_kernel_params_partition(root, id_root, partuuid)
 
 		# Zswap should be disabled when using zram.
-		# https://github.com/archlinux/archinstall/issues/881
+		# https://github.com/archlinux/runixinstall/issues/881
 		if self._zram_enabled:
 			kernel_parameters.append('zswap.enabled=0')
 
@@ -1158,7 +1158,7 @@ class Installer:
 
 		entry_template = textwrap.dedent(
 			f"""\
-			# Created by: archinstall
+			# Created by: runixinstall
 			# Created on: {self.init_time}
 			title   Arch Linux ({{kernel}}{{variant}})
 			linux   /vmlinuz-{{kernel}}
@@ -1202,7 +1202,7 @@ class Installer:
 			bootctl_options.append(f'--esp-path={efi_partition.mountpoint}')
 			bootctl_options.append(f'--boot-path={boot_partition.mountpoint}')
 
-		# TODO: This is a temporary workaround to deal with https://github.com/archlinux/archinstall/pull/3396#issuecomment-2996862019
+		# TODO: This is a temporary workaround to deal with https://github.com/archlinux/runixinstall/pull/3396#issuecomment-2996862019
 		# the systemd_version check can be removed once `--variables=BOOL` is merged into systemd.
 		systemd_pkg = installed_package('systemd')
 
@@ -1618,7 +1618,7 @@ class Installer:
 	def add_bootloader(self, bootloader: Bootloader, uki_enabled: bool = False, bootloader_removable: bool = False) -> None:
 		"""
 		Adds a bootloader to the installation instance.
-		Archinstall supports one of three types:
+		runixinstall supports one of three types:
 		* systemd-bootctl
 		* grub
 		* limine
@@ -1796,12 +1796,12 @@ class Installer:
 				error(f'Invalid keyboard language specified: {language}')
 				return False
 
-			# In accordance with https://github.com/archlinux/archinstall/issues/107#issuecomment-841701968
+			# In accordance with https://github.com/archlinux/runixinstall/issues/107#issuecomment-841701968
 			# Setting an empty keymap first, allows the subsequent call to set layout for both console and x11.
 			from .boot import Boot
 
 			with Boot(self) as session:
-				os.system('systemd-run --machine=archinstall --pty localectl set-keymap ""')
+				os.system('systemd-run --machine=runixinstall --pty localectl set-keymap ""')
 
 				try:
 					session.SysCommand(['localectl', 'set-keymap', language])

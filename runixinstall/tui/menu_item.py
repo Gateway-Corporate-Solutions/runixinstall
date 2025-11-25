@@ -6,7 +6,7 @@ from enum import Enum
 from functools import cached_property
 from typing import Any, ClassVar
 
-from archinstall.lib.translationhandler import tr
+from runixinstall.lib.translationhandler import tr
 
 from ..lib.utils.unicode import unicode_ljust
 

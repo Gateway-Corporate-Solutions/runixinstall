@@ -1,9 +1,9 @@
 from typing import TYPE_CHECKING, override
 
-from archinstall.default_profiles.profile import Profile, ProfileType
+from runixinstall.default_profiles.profile import Profile, ProfileType
 
 if TYPE_CHECKING:
-	from archinstall.lib.installer import Installer
+	from runixinstall.lib.installer import Installer
 
 
 class MariadbProfile(Profile):

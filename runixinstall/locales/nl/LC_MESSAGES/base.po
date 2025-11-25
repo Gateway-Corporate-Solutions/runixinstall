@@ -15,8 +15,8 @@ msgstr ""
 msgid "[!] A log file has been created here: {} {}"
 msgstr "[!] Er is een logboek aangemaakt: {} {}"
 
-msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Meld dit voorval (inclusief het logboek) op https://github.com/archlinux/archinstall/issues"
+msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Meld dit voorval (inclusief het logboek) op https://github.com/archlinux/runixinstall/issues"
 
 msgid "Do you really want to abort?"
 msgstr "Weet u zeker dat u wilt afbreken?"
@@ -170,8 +170,8 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr "Voer de naam in van het gewenste bestandssysteem: "
 
-msgid "Archinstall language"
-msgstr "Archinstall-taal"
+msgid "runixinstall language"
+msgstr "runixinstall-taal"
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
 msgstr "Alle geselecteerde schijven formatteren en best mogelijke partitie-indeling gebruiken"
@@ -305,12 +305,12 @@ msgstr "Installeren ({} confirguratie(s) ontbreekt/ontbreken)"
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 "U heeft de schijfkeuze overgeslagen.\n"
 "Hierdoor zal de op {} aangekoppelde schijf worden gebruikt (experimenteel).\n"
-"WAARSCHUWING: Archinstall controleert niet of deze schijf geschikt is.\n"
+"WAARSCHUWING: runixinstall controleert niet of deze schijf geschikt is.\n"
 "Weet u zeker dat u wilt doorgaan?"
 
 msgid "Re-using partition instance: {}"
@@ -449,7 +449,7 @@ msgstr ""
 msgid "Pacman is already running, waiting maximum 10 minutes for it to terminate."
 msgstr "Pacman is al actief. Er wordt maximaal 10 minuten gewacht alvorens het opnieuw te proberen."
 
-msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall."
+msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall."
 msgstr "De eerdere Pacman-vergrendeling is niet opgeheven. Sluit actieve Pacman-sessies af alvorens deze installatiewizard te gebruiken."
 
 msgid "Choose which optional additional repositories to enable"
@@ -866,7 +866,7 @@ msgstr ""
 msgid "The font should be stored as {}"
 msgstr ""
 
-msgid "Archinstall requires root privileges to run. See --help for more."
+msgid "runixinstall requires root privileges to run. See --help for more."
 msgstr ""
 
 #, fuzzy
@@ -1318,7 +1318,7 @@ msgstr ""
 msgid "Waiting for time sync (timedatectl show) to complete."
 msgstr ""
 
-msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
+msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
 msgstr ""
 
 msgid "Skipping waiting for automatic time sync (this can cause issues if time is out of sync during installation)"
@@ -1331,7 +1331,7 @@ msgstr ""
 msgid "Selected profiles: "
 msgstr "Gebruiker verwijderen"
 
-msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
+msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
 msgstr ""
 
 #, fuzzy
@@ -1419,8 +1419,8 @@ msgid "No"
 msgstr ""
 
 #, fuzzy
-msgid "Archinstall help"
-msgstr "Archinstall-taal"
+msgid "runixinstall help"
+msgstr "runixinstall-taal"
 
 msgid " (default)"
 msgstr ""
@@ -1588,8 +1588,8 @@ msgid "Disabled"
 msgstr ""
 
 #, fuzzy
-msgid "Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Meld dit voorval (inclusief het logboek) op https://github.com/archlinux/archinstall/issues"
+msgid "Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Meld dit voorval (inclusief het logboek) op https://github.com/archlinux/runixinstall/issues"
 
 #, fuzzy
 msgid "Mirror name"
@@ -1806,8 +1806,8 @@ msgid "Package group:"
 msgstr ""
 
 #, fuzzy
-msgid "Exit archinstall"
-msgstr "Archinstall-taal"
+msgid "Exit runixinstall"
+msgstr "runixinstall-taal"
 
 msgid "Reboot system"
 msgstr ""

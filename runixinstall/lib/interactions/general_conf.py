@@ -4,13 +4,13 @@ from enum import Enum
 from pathlib import Path
 from typing import assert_never
 
-from archinstall.lib.models.packages import Repository
-from archinstall.lib.packages.packages import list_available_packages
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import EditMenu, SelectMenu, Tui
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
-from archinstall.tui.result import ResultType
-from archinstall.tui.types import Alignment, FrameProperties, Orientation, PreviewStyle
+from runixinstall.lib.models.packages import Repository
+from runixinstall.lib.packages.packages import list_available_packages
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import EditMenu, SelectMenu, Tui
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.tui.result import ResultType
+from runixinstall.tui.types import Alignment, FrameProperties, Orientation, PreviewStyle
 
 from ..locale.utils import list_timezones
 from ..models.packages import AvailablePackage, PackageGroup
@@ -19,7 +19,7 @@ from ..translationhandler import Language
 
 
 class PostInstallationAction(Enum):
-	EXIT = tr('Exit archinstall')
+	EXIT = tr('Exit runixinstall')
 	REBOOT = tr('Reboot system')
 	CHROOT = tr('chroot into installation for post-installation configurations')
 
@@ -114,7 +114,7 @@ def select_language(preset: str | None = None) -> str | None:
 	return select_kb_layout(preset)
 
 
-def select_archinstall_language(languages: list[Language], preset: Language) -> Language:
+def select_runixinstall_language(languages: list[Language], preset: Language) -> Language:
 	# these are the displayed language names which can either be
 	# the english name of a language or, if present, the
 	# name of the language in its own language

@@ -1,7 +1,7 @@
 from typing import override
 
-from archinstall.default_profiles.profile import Profile, ProfileType
-from archinstall.lib.translationhandler import tr
+from runixinstall.default_profiles.profile import Profile, ProfileType
+from runixinstall.lib.translationhandler import tr
 
 
 class XorgProfile(Profile):

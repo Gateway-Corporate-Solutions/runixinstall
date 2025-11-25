@@ -12,22 +12,22 @@ from urllib.request import Request, urlopen
 
 from pydantic.dataclasses import dataclass as p_dataclass
 
-from archinstall.lib.crypt import decrypt
-from archinstall.lib.models.application import ApplicationConfiguration
-from archinstall.lib.models.authentication import AuthenticationConfiguration
-from archinstall.lib.models.bootloader import Bootloader, BootloaderConfiguration
-from archinstall.lib.models.device import DiskEncryption, DiskLayoutConfiguration
-from archinstall.lib.models.locale import LocaleConfiguration
-from archinstall.lib.models.mirrors import MirrorConfiguration
-from archinstall.lib.models.network import NetworkConfiguration
-from archinstall.lib.models.packages import Repository
-from archinstall.lib.models.profile import ProfileConfiguration
-from archinstall.lib.models.users import Password, User, UserSerialization
-from archinstall.lib.output import debug, error, logger, warn
-from archinstall.lib.plugins import load_plugin
-from archinstall.lib.translationhandler import Language, tr, translation_handler
-from archinstall.lib.utils.util import get_password
-from archinstall.tui.curses_menu import Tui
+from runixinstall.lib.crypt import decrypt
+from runixinstall.lib.models.application import ApplicationConfiguration
+from runixinstall.lib.models.authentication import AuthenticationConfiguration
+from runixinstall.lib.models.bootloader import Bootloader, BootloaderConfiguration
+from runixinstall.lib.models.device import DiskEncryption, DiskLayoutConfiguration
+from runixinstall.lib.models.locale import LocaleConfiguration
+from runixinstall.lib.models.mirrors import MirrorConfiguration
+from runixinstall.lib.models.network import NetworkConfiguration
+from runixinstall.lib.models.packages import Repository
+from runixinstall.lib.models.profile import ProfileConfiguration
+from runixinstall.lib.models.users import Password, User, UserSerialization
+from runixinstall.lib.output import debug, error, logger, warn
+from runixinstall.lib.plugins import load_plugin
+from runixinstall.lib.translationhandler import Language, tr, translation_handler
+from runixinstall.lib.utils.util import get_password
+from runixinstall.tui.curses_menu import Tui
 
 
 @p_dataclass
@@ -59,7 +59,7 @@ class ArchConfig:
 	version: str | None = None
 	script: str | None = None
 	locale_config: LocaleConfiguration | None = None
-	archinstall_language: Language = field(default_factory=lambda: translation_handler.get_language_by_abbr('en'))
+	runixinstall_language: Language = field(default_factory=lambda: translation_handler.get_language_by_abbr('en'))
 	disk_config: DiskLayoutConfiguration | None = None
 	profile_config: ProfileConfiguration | None = None
 	mirror_config: MirrorConfiguration | None = None
@@ -98,7 +98,7 @@ class ArchConfig:
 		config: Any = {
 			'version': self.version,
 			'script': self.script,
-			'archinstall-language': self.archinstall_language.json(),
+			'runixinstall-language': self.runixinstall_language.json(),
 			'hostname': self.hostname,
 			'kernels': self.kernels,
 			'ntp': self.ntp,
@@ -139,8 +139,8 @@ class ArchConfig:
 		if script := args_config.get('script', None):
 			arch_config.script = script
 
-		if archinstall_lang := args_config.get('archinstall-language', None):
-			arch_config.archinstall_language = translation_handler.get_language_by_name(archinstall_lang)
+		if runixinstall_lang := args_config.get('runixinstall-language', None):
+			arch_config.runixinstall_language = translation_handler.get_language_by_name(runixinstall_lang)
 
 		if disk_config := args_config.get('disk_config', {}):
 			enc_password = args_config.get('encryption_password', '')
@@ -288,9 +288,9 @@ class ArchConfigHandler:
 
 	def _get_version(self) -> str:
 		try:
-			return version('archinstall')
+			return version('runixinstall')
 		except Exception:
-			return 'Archinstall version not found'
+			return 'runixinstall version not found'
 
 	def _define_arguments(self) -> ArgumentParser:
 		parser = ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -409,13 +409,13 @@ class ArchConfigHandler:
 			'--skip-version-check',
 			action='store_true',
 			default=False,
-			help='Skip the version check when running archinstall',
+			help='Skip the version check when running runixinstall',
 		)
 		parser.add_argument(
 			'--skip-wifi-check',
 			action='store_true',
 			default=False,
-			help='Skip wifi check when running archinstall',
+			help='Skip wifi check when running runixinstall',
 		)
 		parser.add_argument(
 			'--advanced',
@@ -449,8 +449,8 @@ class ArchConfigHandler:
 			load_plugin(plugin_path)
 
 		if args.creds_decryption_key is None:
-			if os.environ.get('ARCHINSTALL_CREDS_DECRYPTION_KEY'):
-				args.creds_decryption_key = os.environ.get('ARCHINSTALL_CREDS_DECRYPTION_KEY')
+			if os.environ.get('runixinstall_CREDS_DECRYPTION_KEY'):
+				args.creds_decryption_key = os.environ.get('runixinstall_CREDS_DECRYPTION_KEY')
 
 		return args
 
@@ -527,7 +527,7 @@ class ArchConfigHandler:
 	def _fetch_from_url(self, url: str) -> str:
 		if urllib.parse.urlparse(url).scheme:
 			try:
-				req = Request(url, headers={'User-Agent': 'ArchInstall'})
+				req = Request(url, headers={'User-Agent': 'runixinstall'})
 				with urlopen(req) as resp:
 					return resp.read().decode('utf-8')
 			except urllib.error.HTTPError as err:

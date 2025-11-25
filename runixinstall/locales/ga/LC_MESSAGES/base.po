@@ -14,8 +14,8 @@ msgstr ""
 msgid "[!] A log file has been created here: {} {}"
 msgstr "[!] Cruthaíodh logchomhad anseo: {} {}"
 
-msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Cuir isteach an tsaincheist seo (agus an comhad) chuig https://github.com/archlinux/archinstall/issues"
+msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Cuir isteach an tsaincheist seo (agus an comhad) chuig https://github.com/archlinux/runixinstall/issues"
 
 msgid "Do you really want to abort?"
 msgstr "Ar mhaith leat tobscoir?"
@@ -169,8 +169,8 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr "Cuir isteach cineál córais comhad atá ag teastáil don deighilt: "
 
-msgid "Archinstall language"
-msgstr "Teanga Archinstall"
+msgid "runixinstall language"
+msgstr "Teanga runixinstall"
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
 msgstr "Scrios gach tiomántán roghnaithe agus bain úsáid as leagan amach deighilte réamhshocraithe is fearr iarrachta"
@@ -301,12 +301,12 @@ msgstr "Suiteáil ({} config(s) in easnamh)"
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 "Shocraigh tú an rogha tiomántán crua a scipeáil\n"
 "agus úsáidfidh sé cibé tiomántán atá gléasta ag {} (turgnamhach)\n"
-"RABHADH: Ní seiceálfaidh Archinstall oiriúnacht an tsocraithe seo\n"
+"RABHADH: Ní seiceálfaidh runixinstall oiriúnacht an tsocraithe seo\n"
 "Ar mhaith leat leanúint ar aghaidh?"
 
 msgid "Re-using partition instance: {}"
@@ -445,8 +445,8 @@ msgstr ""
 msgid "Pacman is already running, waiting maximum 10 minutes for it to terminate."
 msgstr "Tá PacmanName ag rith cheana féin, ag fanacht 10 nóiméad ar a mhéad chun é a fhoirceannadh."
 
-msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall."
-msgstr "Níor imigh an glas pacmannach a bhí ann cheana. Glan suas aon seisiúin PacmanName atá ann cheana féin le do thoil roimh úsáid a bhaint as archinstall."
+msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall."
+msgstr "Níor imigh an glas pacmannach a bhí ann cheana. Glan suas aon seisiúin PacmanName atá ann cheana féin le do thoil roimh úsáid a bhaint as runixinstall."
 
 msgid "Choose which optional additional repositories to enable"
 msgstr "Roghnaigh na stórtha breise roghnacha le cumasú"
@@ -838,8 +838,8 @@ msgstr "Chun an t-aistriúchán seo a úsáid, suiteáil cló de láimh a thaca�
 msgid "The font should be stored as {}"
 msgstr "Ba cheart an cló a stóráil mar {}"
 
-msgid "Archinstall requires root privileges to run. See --help for more."
-msgstr "Éilíonn Archinstall pribhléidí fréimhe chun é a rith. Féach --help le haghaidh tuilleadh."
+msgid "runixinstall requires root privileges to run. See --help for more."
+msgstr "Éilíonn runixinstall pribhléidí fréimhe chun é a rith. Féach --help le haghaidh tuilleadh."
 
 msgid "Select an execution mode"
 msgstr "Roghnaigh modh forghníomhaithe"
@@ -1252,8 +1252,8 @@ msgstr "Íomhánna eithne aontaithe"
 msgid "Waiting for time sync (timedatectl show) to complete."
 msgstr "Ag fanacht le sioncronú ama (timedatectl show) le cur i gcrích."
 
-msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "Níl an sioncrónú ama críochnaithe, agus tú ag fanacht - seiceáil na doiciméid le haghaidh réitigh oibre: https://archinstall.readthedocs.io/"
+msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "Níl an sioncrónú ama críochnaithe, agus tú ag fanacht - seiceáil na doiciméid le haghaidh réitigh oibre: https://runixinstall.readthedocs.io/"
 
 msgid "Skipping waiting for automatic time sync (this can cause issues if time is out of sync during installation)"
 msgstr "Gan bacadh le feithimh le haghaidh sioncronaithe ama uathoibríoch (féadfaidh sé seo fadhbanna a chruthú má bhíonn an t-am as sioncronaithe le linn na suiteála)"
@@ -1264,8 +1264,8 @@ msgstr "Ag fanacht le sioncronú eochairfháinne Arch Linux (archlinux-keyring-w
 msgid "Selected profiles: "
 msgstr "Próifílí roghnaithe: "
 
-msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "Níl an sioncrónú ama críochnaithe, agus tú ag fanacht - seiceáil na doiciméid le haghaidh réitigh oibre: https://archinstall.readthedocs.io/"
+msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "Níl an sioncrónú ama críochnaithe, agus tú ag fanacht - seiceáil na doiciméid le haghaidh réitigh oibre: https://runixinstall.readthedocs.io/"
 
 msgid "Mark/Unmark as nodatacow"
 msgstr "Marcáil/Dímharcáil mar bhó nodata"
@@ -1340,8 +1340,8 @@ msgstr "Tá"
 msgid "No"
 msgstr "Níl"
 
-msgid "Archinstall help"
-msgstr "Cabhair Archinstall"
+msgid "runixinstall help"
+msgstr "Cabhair runixinstall"
 
 msgid " (default)"
 msgstr " (réamhshocraithe)"
@@ -1522,8 +1522,8 @@ msgid "Disabled"
 msgstr ""
 
 #, fuzzy
-msgid "Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Cuir isteach an tsaincheist seo (agus an comhad) chuig https://github.com/archlinux/archinstall/issues"
+msgid "Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Cuir isteach an tsaincheist seo (agus an comhad) chuig https://github.com/archlinux/runixinstall/issues"
 
 #, fuzzy
 msgid "Mirror name"
@@ -1758,8 +1758,8 @@ msgid "Package group:"
 msgstr ""
 
 #, fuzzy
-msgid "Exit archinstall"
-msgstr "Cabhair Archinstall"
+msgid "Exit runixinstall"
+msgstr "Cabhair runixinstall"
 
 #, fuzzy
 msgid "Reboot system"

@@ -1,6 +1,6 @@
 # This workflow will build Python packages on every commit.
 
-name: Build archinstall
+name: Build runixinstall
 
 on: [ push, pull_request ]
 
@@ -19,21 +19,21 @@ jobs:
           pacman --noconfirm -Syyu
           pacman --noconfirm -Sy python-uv python-setuptools python-pip
           pacman --noconfirm -Sy python-pyparted python-pydantic
-      - name: Remove existing archinstall (if any)
+      - name: Remove existing runixinstall (if any)
         run: 
-          uv pip uninstall archinstall --break-system-packages --system
-      - name: Build archinstall
+          uv pip uninstall runixinstall --break-system-packages --system
+      - name: Build runixinstall
         run: uv build --no-build-isolation --wheel
-      - name: Install archinstall
+      - name: Install runixinstall
         run: |
           uv pip install dist/*.whl --break-system-packages --system --no-build --no-deps
-      - name: Run archinstall
+      - name: Run runixinstall
         run: |
           python -V
-          archinstall --script guided -v
-          archinstall --script only_hd -v
-          archinstall --script minimal -v
+          runixinstall --script guided -v
+          runixinstall --script only_hd -v
+          runixinstall --script minimal -v
       - uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5
         with:
-          name: archinstall
+          name: runixinstall
           path: dist/*

@@ -2,7 +2,7 @@ import time
 from collections.abc import Callable
 from pathlib import Path
 
-from archinstall.lib.translationhandler import tr
+from runixinstall.lib.translationhandler import tr
 
 from ..exceptions import RequirementError
 from ..general import SysCommand
@@ -34,7 +34,7 @@ class Pacman:
 			time.sleep(0.25)
 
 			if time.time() - started > (60 * 10):
-				error(tr('Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall.'))
+				error(tr('Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall.'))
 				exit(1)
 
 		return SysCommand(f'{default_cmd} {args}')
@@ -76,7 +76,7 @@ class Pacman:
 
 		self.ask(
 			'Could not strap in packages',
-			'Pacstrap failed. See /var/log/archinstall/install.log or above message for error details',
+			'Pacstrap failed. See /var/log/runixinstall/install.log or above message for error details',
 			SysCommand,
 			f'pacstrap -C /etc/pacman.conf -K {self.target} {" ".join(packages)} --noconfirm --needed',
 			peek_output=True,

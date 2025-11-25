@@ -1,17 +1,17 @@
 from pathlib import Path
 
-from archinstall.default_profiles.minimal import MinimalProfile
-from archinstall.lib.args import arch_config_handler
-from archinstall.lib.configuration import ConfigurationOutput
-from archinstall.lib.disk.disk_menu import DiskLayoutConfigurationMenu
-from archinstall.lib.disk.filesystem import FilesystemHandler
-from archinstall.lib.installer import Installer
-from archinstall.lib.models import Bootloader
-from archinstall.lib.models.profile import ProfileConfiguration
-from archinstall.lib.models.users import Password, User
-from archinstall.lib.output import debug, error, info
-from archinstall.lib.profile.profiles_handler import profile_handler
-from archinstall.tui import Tui
+from runixinstall.default_profiles.minimal import MinimalProfile
+from runixinstall.lib.args import arch_config_handler
+from runixinstall.lib.configuration import ConfigurationOutput
+from runixinstall.lib.disk.disk_menu import DiskLayoutConfigurationMenu
+from runixinstall.lib.disk.filesystem import FilesystemHandler
+from runixinstall.lib.installer import Installer
+from runixinstall.lib.models import Bootloader
+from runixinstall.lib.models.profile import ProfileConfiguration
+from runixinstall.lib.models.users import Password, User
+from runixinstall.lib.output import debug, error, info
+from runixinstall.lib.profile.profiles_handler import profile_handler
+from runixinstall.tui import Tui
 
 
 def perform_installation(mountpoint: Path) -> None:

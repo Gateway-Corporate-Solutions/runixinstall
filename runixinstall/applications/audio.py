@@ -1,12 +1,12 @@
 from typing import TYPE_CHECKING
 
-from archinstall.lib.hardware import SysInfo
-from archinstall.lib.models.application import Audio, AudioConfiguration
-from archinstall.lib.models.users import User
-from archinstall.lib.output import debug
+from runixinstall.lib.hardware import SysInfo
+from runixinstall.lib.models.application import Audio, AudioConfiguration
+from runixinstall.lib.models.users import User
+from runixinstall.lib.output import debug
 
 if TYPE_CHECKING:
-	from archinstall.lib.installer import Installer
+	from runixinstall.lib.installer import Installer
 
 
 class AudioApp:

@@ -2,15 +2,15 @@ import getpass
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-from archinstall.lib.general import SysCommandWorker
-from archinstall.lib.models.authentication import AuthenticationConfiguration, U2FLoginConfiguration, U2FLoginMethod
-from archinstall.lib.models.users import User
-from archinstall.lib.output import debug
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import Tui
+from runixinstall.lib.general import SysCommandWorker
+from runixinstall.lib.models.authentication import AuthenticationConfiguration, U2FLoginConfiguration, U2FLoginMethod
+from runixinstall.lib.models.users import User
+from runixinstall.lib.output import debug
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import Tui
 
 if TYPE_CHECKING:
-	from archinstall.lib.installer import Installer
+	from runixinstall.lib.installer import Installer
 
 
 class AuthenticationHandler:

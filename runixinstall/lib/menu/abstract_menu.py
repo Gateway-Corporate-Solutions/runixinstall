@@ -3,11 +3,11 @@ from __future__ import annotations
 from types import TracebackType
 from typing import Any, Self
 
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import SelectMenu, Tui
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
-from archinstall.tui.result import ResultType
-from archinstall.tui.types import Chars, FrameProperties, FrameStyle, PreviewStyle
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import SelectMenu, Tui
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.tui.result import ResultType
+from runixinstall.tui.types import Chars, FrameProperties, FrameStyle, PreviewStyle
 
 from ..output import error
 
@@ -42,7 +42,7 @@ class AbstractMenu[ValueT]:
 		# TODO: skip processing when it comes from a planified exit
 		if exc_type is not None:
 			error(str(exc_value))
-			Tui.print('Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues')
+			Tui.print('Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues')
 
 			# Return None to propagate the exception
 			return None

@@ -1,8 +1,8 @@
 msgid "[!] A log file has been created here: {} {}"
 msgstr "[!] Aik log file yahan bana di gai hai: {} {}"
 
-msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Brah e meharbani is issue (aur file) ko https://github.com/archlinux/archinstall/issues par submit krein"
+msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Brah e meharbani is issue (aur file) ko https://github.com/archlinux/runixinstall/issues par submit krein"
 
 msgid "Do you really want to abort?"
 msgstr "Kia aap sach mein yeh band karna chahtay hein?"
@@ -155,8 +155,8 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr "Matlooba filesystem ki type partition kay liay dar'j krein: "
 
-msgid "Archinstall language"
-msgstr "Archinstall ki zuban"
+msgid "runixinstall language"
+msgstr "runixinstall ki zuban"
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
 msgstr "Tamam muntkh'b drives ko mita kar aik best-effort default partition layout istimal krein"
@@ -288,12 +288,12 @@ msgstr "Install ({} tarteb mojod nahi)"
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 "Aap nay harddrive ka intikhab karna chod nay ka faisla kia.\n"
 "Aur jo drive setup {} (tajurbati) par mount kia gia hay, iska istimal krein gay\n"
-"Intba'h: Archinstall is setup ki muta'bqat ki janch nahi karay ga\n"
+"Intba'h: runixinstall is setup ki muta'bqat ki janch nahi karay ga\n"
 "Kia aap jari rakhna chahtay hein?"
 
 msgid "Re-using partition instance: {}"
@@ -432,8 +432,8 @@ msgstr ""
 msgid "Pacman is already running, waiting maximum 10 minutes for it to terminate."
 msgstr "Pacman pehlay hi chal rha hay, maximum 10 minutes intizar hay k woh khatam ho jay."
 
-msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall."
-msgstr "Pehlay say m'ojud pacman lock khatam nahi huwa. Brah'e mehrbani archinstall ka istimal karnay say pehle kisi bhi m'ojude'h pacman session ko saaf krein."
+msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall."
+msgstr "Pehlay say m'ojud pacman lock khatam nahi huwa. Brah'e mehrbani runixinstall ka istimal karnay say pehle kisi bhi m'ojude'h pacman session ko saaf krein."
 
 msgid "Choose which optional additional repositories to enable"
 msgstr "Konsi ikhtiari azafi repositories ko enable karna chahtay hein, muntkh'b krein"
@@ -825,8 +825,8 @@ msgstr "Is translation ko istimal kay liay, brah e meharbani aik font manuallly 
 msgid "The font should be stored as {}"
 msgstr "Font is trah {} store hona chahiya"
 
-msgid "Archinstall requires root privileges to run. See --help for more."
-msgstr "Archinstall ko chalanay kay liay root hona zarori hai. ziada kay liay --help daykhein."
+msgid "runixinstall requires root privileges to run. See --help for more."
+msgstr "runixinstall ko chalanay kay liay root hona zarori hai. ziada kay liay --help daykhein."
 
 msgid "Select an execution mode"
 msgstr "Excution mode ko select krein"
@@ -1207,8 +1207,8 @@ msgstr "Unified kernel images"
 msgid "Waiting for time sync (timedatectl show) to complete."
 msgstr "Time sync (timedatectl show) kay mukamal honay ka intzar hai."
 
-msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "Aap kay intzar kartay huay time ki syncroniztion pori nhi hui, docs ko check krein: https://archinstall.readthedocs.io/"
+msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "Aap kay intzar kartay huay time ki syncroniztion pori nhi hui, docs ko check krein: https://runixinstall.readthedocs.io/"
 
 msgid "Skipping waiting for automatic time sync (this can cause issues if time is out of sync during installation)"
 msgstr "Khud kar time sync kay intzar ko khatam krein (yeh issue bana sakta hai installation kay duran agar time sync say out hota hai)"
@@ -1219,8 +1219,8 @@ msgstr "Arch Linux keyring sync (archlinux-keyring-wkd-sync) kay mukamal honay k
 msgid "Selected profiles: "
 msgstr "Muntkhab Profiles: "
 
-msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "Aap kay intzar kartay huay time ki syncroniztion pori nhi hui, docs ko check krein: https://archinstall.readthedocs.io/"
+msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "Aap kay intzar kartay huay time ki syncroniztion pori nhi hui, docs ko check krein: https://runixinstall.readthedocs.io/"
 
 msgid "Mark/Unmark as nodatacow"
 msgstr "Nodatacow kay mark/unmark krein"
@@ -1305,8 +1305,8 @@ msgid "No"
 msgstr "Nahi"
 
 #, fuzzy
-msgid "Archinstall help"
-msgstr "Archinstall ki madad"
+msgid "runixinstall help"
+msgstr "runixinstall ki madad"
 
 msgid " (default)"
 msgstr " (default)"
@@ -1479,8 +1479,8 @@ msgid "Disabled"
 msgstr "Disabled"
 
 #, fuzzy
-msgid "Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "Brah e meharbani is issue (aur file) ko https://github.com/archlinux/archinstall/issues par submit krein"
+msgid "Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "Brah e meharbani is issue (aur file) ko https://github.com/archlinux/runixinstall/issues par submit krein"
 
 #, fuzzy
 msgid "Mirror name"
@@ -1703,8 +1703,8 @@ msgid "Package group:"
 msgstr "Package ka group:"
 
 #, fuzzy
-msgid "Exit archinstall"
-msgstr "Archinstall say nikalein"
+msgid "Exit runixinstall"
+msgstr "runixinstall say nikalein"
 
 msgid "Reboot system"
 msgstr "System reboot krein"

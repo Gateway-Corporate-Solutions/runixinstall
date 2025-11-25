@@ -12,10 +12,10 @@ from .output import error, info, warn
 plugins = {}
 
 
-# 1: List archinstall.plugin definitions
+# 1: List runixinstall.plugin definitions
 # 2: Load the plugin entrypoint
 # 3: Initiate the plugin and store it as .name in plugins
-for plugin_definition in metadata.entry_points().select(group='archinstall.plugin'):
+for plugin_definition in metadata.entry_points().select(group='runixinstall.plugin'):
 	plugin_entrypoint = plugin_definition.load()
 
 	try:
@@ -90,15 +90,15 @@ def load_plugin(path: Path) -> None:
 	if namespace and namespace in sys.modules:
 		from .args import arch_config_handler
 
-		# Version dependency via __archinstall__version__ variable (if present) in the plugin
+		# Version dependency via __runixinstall__version__ variable (if present) in the plugin
 		# Any errors in version inconsistency will be handled through normal error handling if not defined.
 		version = arch_config_handler.config.version
 
 		if version is not None:
 			version_major_and_minor = version.rsplit('.', 1)[0]
 
-			if sys.modules[namespace].__archinstall__version__ < float(version_major_and_minor):
-				error(f'Plugin {sys.modules[namespace]} does not support the current Archinstall version.')
+			if sys.modules[namespace].__runixinstall__version__ < float(version_major_and_minor):
+				error(f'Plugin {sys.modules[namespace]} does not support the current runixinstall version.')
 
 		# Locate the plugin entry-point called Plugin()
 		# This in accordance with the entry_points() from setup.cfg above

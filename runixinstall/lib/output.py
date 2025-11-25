@@ -136,7 +136,7 @@ class Journald:
 		except ModuleNotFoundError:
 			return None
 
-		log_adapter = logging.getLogger('archinstall')
+		log_adapter = logging.getLogger('runixinstall')
 		log_fmt = logging.Formatter('[%(levelname)s]: %(message)s')
 		log_ch = systemd.journal.JournalHandler()
 		log_ch.setFormatter(log_fmt)
@@ -147,7 +147,7 @@ class Journald:
 
 
 class Logger:
-	def __init__(self, path: Path = Path('/var/log/archinstall')) -> None:
+	def __init__(self, path: Path = Path('/var/log/runixinstall')) -> None:
 		self._path = path
 
 	@property
@@ -333,6 +333,6 @@ def log(
 	Journald.log(text, level=level)
 
 	if level != logging.DEBUG:
-		from archinstall.tui.curses_menu import Tui
+		from runixinstall.tui.curses_menu import Tui
 
 		Tui.print(text)

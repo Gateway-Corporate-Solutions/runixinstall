@@ -1,10 +1,10 @@
 from pathlib import Path
 
-from archinstall.lib.args import arch_config_handler
-from archinstall.lib.disk.device_handler import device_handler
-from archinstall.lib.disk.partitioning_menu import manual_partitioning
-from archinstall.lib.menu.menu_helper import MenuHelper
-from archinstall.lib.models.device import (
+from runixinstall.lib.args import arch_config_handler
+from runixinstall.lib.disk.device_handler import device_handler
+from runixinstall.lib.disk.partitioning_menu import manual_partitioning
+from runixinstall.lib.menu.menu_helper import MenuHelper
+from runixinstall.lib.models.device import (
 	BDevice,
 	BtrfsMountOption,
 	DeviceModification,
@@ -26,12 +26,12 @@ from archinstall.lib.models.device import (
 	Unit,
 	_DeviceInfo,
 )
-from archinstall.lib.output import debug
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import SelectMenu
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
-from archinstall.tui.result import ResultType
-from archinstall.tui.types import Alignment, FrameProperties, Orientation, PreviewStyle
+from runixinstall.lib.output import debug
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import SelectMenu
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.tui.result import ResultType
+from runixinstall.tui.types import Alignment, FrameProperties, Orientation, PreviewStyle
 
 from ..output import FormattedOutput
 from ..utils.util import prompt_dir
@@ -150,7 +150,7 @@ def select_disk_config(preset: DiskLayoutConfiguration | None = None) -> DiskLay
 
 			if selection == pre_mount_mode:
 				output = 'You will use whatever drive-setup is mounted at the specified directory\n'
-				output += "WARNING: Archinstall won't check the suitability of this setup\n"
+				output += "WARNING: runixinstall won't check the suitability of this setup\n"
 
 				path = prompt_dir(tr('Root mount directory'), output, allow_skip=True)
 
@@ -550,7 +550,7 @@ def suggest_multi_disk_layout(
 def suggest_lvm_layout(
 	disk_config: DiskLayoutConfiguration,
 	filesystem_type: FilesystemType | None = None,
-	vg_grp_name: str = 'ArchinstallVg',
+	vg_grp_name: str = 'runixinstallVg',
 ) -> LvmConfiguration:
 	if disk_config.config_type != DiskLayoutType.Default:
 		raise ValueError('LVM suggested volumes are only available for default partitioning')

@@ -4,8 +4,8 @@ import math
 import time
 from pathlib import Path
 
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import Tui
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import Tui
 
 from ..interactions.general_conf import ask_abort
 from ..luks import Luks2

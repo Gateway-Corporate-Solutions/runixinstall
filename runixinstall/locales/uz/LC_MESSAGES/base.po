@@ -1,11 +1,11 @@
 # O'zbek tili tarjimasi - Arch Install
 # Copyright (C) 2025 Arch Install Contributors
-# This file is distributed under the same license as the archinstall package.
+# This file is distributed under the same license as the runixinstall package.
 # Muhammadyoqub <ymuhammadyoqub2007@gmail.com>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: archinstall\n"
+"Project-Id-Version: runixinstall\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-07 12:00+0500\n"
 "PO-Revision-Date: 2025-10-07 12:00+0500\n"
@@ -21,8 +21,8 @@ msgid "[!] A log file has been created here: {} {}"
 msgstr "[!] Log fayl bu yerda yaratildi: {} {}"
 
 #, fuzzy
-msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "Iltimos, ushbu muammo (va fayl) haqida https://github.com/archlinux/archinstall/issues manziliga xabar bering"
+msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "Iltimos, ushbu muammo (va fayl) haqida https://github.com/archlinux/runixinstall/issues manziliga xabar bering"
 
 msgid "Do you really want to abort?"
 msgstr "Haqiqatan ham to'xtatmoqchimisiz?"
@@ -176,8 +176,8 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr "Bo'lim uchun kerakli fayl tizimi turini kiriting: "
 
-msgid "Archinstall language"
-msgstr "Archinstall tili"
+msgid "runixinstall language"
+msgstr "runixinstall tili"
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
 msgstr "Barcha tanlangan disklarni tozalash va tavsiya etilgan standart bo'limlar sxemasini qo'llash"
@@ -308,12 +308,12 @@ msgstr "O'rnatish ({} ta konfiguratsiya yetishmayapti)"
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 "Siz qattiq disk tanlashni o'tkazib yubordingiz\n"
 "va {} manziliga biriktirilgan mavjud disk sozlamalaridan foydalanasiz (eksperimental)\n"
-"DIQQAT: Archinstall bu sozlamaning mosligini tekshirmaydi.\n"
+"DIQQAT: runixinstall bu sozlamaning mosligini tekshirmaydi.\n"
 "Davom etishni xohlaysizmi?"
 
 msgid "Re-using partition instance: {}"
@@ -452,8 +452,8 @@ msgstr ""
 msgid "Pacman is already running, waiting maximum 10 minutes for it to terminate."
 msgstr "Pacman allaqachon ishlamoqda. To'xtashi uchun maksimal 10 daqiqa kutiladi."
 
-msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall."
-msgstr "Oldindan mavjud bo'lgan pacman qulfi olib tashlanmadi. Archinstall'dan foydalanishdan oldin barcha pacman sessiyalarini tozalang."
+msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall."
+msgstr "Oldindan mavjud bo'lgan pacman qulfi olib tashlanmadi. runixinstall'dan foydalanishdan oldin barcha pacman sessiyalarini tozalang."
 
 msgid "Choose which optional additional repositories to enable"
 msgstr "Qo'shimcha (ixtiyoriy) repozitoriylardan qaysilarini yoqishni tanlang"
@@ -847,8 +847,8 @@ msgstr "Ushbu tarjimadan foydalanish uchun tilni qo'llab-quvvatlaydigan shriftni
 msgid "The font should be stored as {}"
 msgstr "Shrift {} sifatida saqlanishi kerak"
 
-msgid "Archinstall requires root privileges to run. See --help for more."
-msgstr "Archinstall'ni ishga tushirish uchun root huquqlari talab qilinadi. Batafsil ma'lumot uchun --help'ga qarang."
+msgid "runixinstall requires root privileges to run. See --help for more."
+msgstr "runixinstall'ni ishga tushirish uchun root huquqlari talab qilinadi. Batafsil ma'lumot uchun --help'ga qarang."
 
 msgid "Select an execution mode"
 msgstr "Bajarish rejimini tanlang"
@@ -1263,8 +1263,8 @@ msgstr "Yagona yadro obrazlari (UKI)"
 msgid "Waiting for time sync (timedatectl show) to complete."
 msgstr "Vaqt sinxronizatsiyasi (timedatectl show) tugashi kutilmoqda."
 
-msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "Vaqt sinxronizatsiyasi tugamayapti. Vaqtinchalik yechimlar uchun hujjatlarni ko'rib chiqing: https://archinstall.readthedocs.io/"
+msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "Vaqt sinxronizatsiyasi tugamayapti. Vaqtinchalik yechimlar uchun hujjatlarni ko'rib chiqing: https://runixinstall.readthedocs.io/"
 
 msgid "Skipping waiting for automatic time sync (this can cause issues if time is out of sync during installation)"
 msgstr "Avtomatik vaqt sinxronizatsiyasini kutish o'tkazib yuborilmoqda (agar o'rnatish paytida vaqt noto'g'ri bo'lsa, bu muammolarga olib kelishi mumkin)"
@@ -1275,8 +1275,8 @@ msgstr "Arch Linux kalitlar zanjiri (keyring) sinxronizatsiyasi tugashi kutilmoq
 msgid "Selected profiles: "
 msgstr "Tanlangan profillar: "
 
-msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "Vaqt sinxronizatsiyasi tugamayapti. Vaqtinchalik yechimlar uchun hujjatlarni ko'rib chiqing: https://archinstall.readthedocs.io/"
+msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "Vaqt sinxronizatsiyasi tugamayapti. Vaqtinchalik yechimlar uchun hujjatlarni ko'rib chiqing: https://runixinstall.readthedocs.io/"
 
 msgid "Mark/Unmark as nodatacow"
 msgstr "nodatacow deb belgilash/bekor qilish"
@@ -1351,8 +1351,8 @@ msgstr "Ha"
 msgid "No"
 msgstr "Yo'q"
 
-msgid "Archinstall help"
-msgstr "Archinstall yordami"
+msgid "runixinstall help"
+msgstr "runixinstall yordami"
 
 msgid " (default)"
 msgstr " (standart)"
@@ -1497,8 +1497,8 @@ msgstr "Yoqilgan"
 msgid "Disabled"
 msgstr "O'chirilgan"
 
-msgid "Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "Iltimos, ushbu muammo (va fayl) haqida https://github.com/archlinux/archinstall/issues manziliga xabar bering"
+msgid "Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "Iltimos, ushbu muammo (va fayl) haqida https://github.com/archlinux/runixinstall/issues manziliga xabar bering"
 
 msgid "Mirror name"
 msgstr "Ko'zgu nomi"
@@ -1689,8 +1689,8 @@ msgstr "ESP deb belgilash/bekor qilish"
 msgid "Package group:"
 msgstr "Paketlar guruhi:"
 
-msgid "Exit archinstall"
-msgstr "Archinstall'dan chiqish"
+msgid "Exit runixinstall"
+msgstr "runixinstall'dan chiqish"
 
 msgid "Reboot system"
 msgstr "Tizimni qayta yuklash"
@@ -1790,5 +1790,5 @@ msgstr "Foydalanuvchi {} uchun U2F qurilmasi sozlanmoqda"
 msgid "You may need to enter the PIN and then touch your U2F device to register it"
 msgstr "Ro'yxatdan o'tkazish uchun PIN-kodni kiritib, U2F qurilmangizga teginishingiz kerak bo'lishi mumkin"
 
-#~ msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-#~ msgstr "    Iltimos, ushbu muammo (va fayl) haqida https://github.com/archlinux/archinstall/issues manziliga xabar bering"
+#~ msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+#~ msgstr "    Iltimos, ushbu muammo (va fayl) haqida https://github.com/archlinux/runixinstall/issues manziliga xabar bering"

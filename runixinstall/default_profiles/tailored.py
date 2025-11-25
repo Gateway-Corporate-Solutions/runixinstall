@@ -1,10 +1,10 @@
 from typing import TYPE_CHECKING, override
 
-from archinstall.default_profiles.profile import ProfileType
-from archinstall.default_profiles.xorg import XorgProfile
+from runixinstall.default_profiles.profile import ProfileType
+from runixinstall.default_profiles.xorg import XorgProfile
 
 if TYPE_CHECKING:
-	from archinstall.lib.installer import Installer
+	from runixinstall.lib.installer import Installer
 
 
 class TailoredProfile(XorgProfile):

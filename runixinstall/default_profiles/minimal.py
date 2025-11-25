@@ -1,4 +1,4 @@
-from archinstall.default_profiles.profile import Profile, ProfileType
+from runixinstall.default_profiles.profile import Profile, ProfileType
 
 
 class MinimalProfile(Profile):

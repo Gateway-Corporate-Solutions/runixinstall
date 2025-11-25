@@ -2,12 +2,12 @@ from __future__ import annotations
 
 from typing import override
 
-from archinstall.lib.disk.disk_menu import DiskLayoutConfigurationMenu
-from archinstall.lib.models.application import ApplicationConfiguration
-from archinstall.lib.models.authentication import AuthenticationConfiguration
-from archinstall.lib.models.device import DiskLayoutConfiguration, DiskLayoutType, EncryptionType, FilesystemType, PartitionModification
-from archinstall.lib.packages import list_available_packages
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.lib.disk.disk_menu import DiskLayoutConfigurationMenu
+from runixinstall.lib.models.application import ApplicationConfiguration
+from runixinstall.lib.models.authentication import AuthenticationConfiguration
+from runixinstall.lib.models.device import DiskLayoutConfiguration, DiskLayoutType, EncryptionType, FilesystemType, PartitionModification
+from runixinstall.lib.packages import list_available_packages
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
 
 from .applications.application_menu import ApplicationMenu
 from .args import ArchConfig
@@ -54,10 +54,10 @@ class GlobalMenu(AbstractMenu[None]):
 	def _get_menu_options(self) -> list[MenuItem]:
 		menu_options = [
 			MenuItem(
-				text=tr('Archinstall language'),
-				action=self._select_archinstall_language,
+				text=tr('runixinstall language'),
+				action=self._select_runixinstall_language,
 				display_action=lambda x: x.display_name if x else '',
-				key='archinstall_language',
+				key='runixinstall_language',
 			),
 			MenuItem(
 				text=tr('Locales'),
@@ -229,10 +229,10 @@ class GlobalMenu(AbstractMenu[None]):
 			return False
 		return self._validate_bootloader() is None
 
-	def _select_archinstall_language(self, preset: Language) -> Language:
-		from .interactions.general_conf import select_archinstall_language
+	def _select_runixinstall_language(self, preset: Language) -> Language:
+		from .interactions.general_conf import select_runixinstall_language
 
-		language = select_archinstall_language(translation_handler.translated_languages, preset)
+		language = select_runixinstall_language(translation_handler.translated_languages, preset)
 		translation_handler.activate(language)
 
 		self._update_lang_text()

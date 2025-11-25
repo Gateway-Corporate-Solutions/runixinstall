@@ -224,8 +224,8 @@ class DeviceHandler:
 			mountpoint = self._TMP_BTRFS_MOUNT
 		else:
 			# when multiple subvolumes are mounted then the lsblk output may look like
-			# "mountpoint": "/mnt/archinstall/var/log"
-			# "mountpoints": ["/mnt/archinstall/var/log", "/mnt/archinstall/home", ..]
+			# "mountpoint": "/mnt/runixinstall/var/log"
+			# "mountpoints": ["/mnt/runixinstall/var/log", "/mnt/runixinstall/home", ..]
 			# so we'll determine the minimum common path and assume that's the root
 			try:
 				common_path = os.path.commonpath(lsblk_info.mountpoints)
@@ -241,7 +241,7 @@ class DeviceHandler:
 			return subvol_infos
 
 		# It is assumed that lsblk will contain the fields as
-		# "mountpoints": ["/mnt/archinstall/log", "/mnt/archinstall/home", "/mnt/archinstall", ...]
+		# "mountpoints": ["/mnt/runixinstall/log", "/mnt/runixinstall/home", "/mnt/runixinstall", ...]
 		# "fsroots": ["/@log", "/@home", "/@"...]
 		# we'll thereby map the fsroot, which are the mounted filesystem roots
 		# to the corresponding mountpoints

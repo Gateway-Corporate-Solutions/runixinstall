@@ -2,7 +2,7 @@
 
 ## PR Description:
 
-<!-- Please describe what changes this PR introduces, a good example would be: https://github.com/archlinux/archinstall/pull/1377 -->
+<!-- Please describe what changes this PR introduces, a good example would be: https://github.com/archlinux/runixinstall/pull/1377 -->
 
 ## Tests and Checks
 - [ ] I have tested the code!<br>

@@ -3,7 +3,7 @@
 pkgname=runixinstall-git
 pkgver=0.0.1
 pkgrel=1
-pkgdesc="A modified archinstall built for Runix"
+pkgdesc="A modified runixinstall built for Runix"
 arch=(any)
 url="https://github.com/Gateway-Corporate-Solutions/runixinstall"
 license=(GPL-3.0-only)
@@ -64,5 +64,5 @@ build() {
 
 package() {
   python -m installer --destdir="$pkgdir" dist/*.whl
-  install -vDm 644 docs/_build/man/archinstall.1 -t "$pkgdir/usr/share/man/man1/"
+  install -vDm 644 docs/_build/man/runixinstall.1 -t "$pkgdir/usr/share/man/man1/"
 }

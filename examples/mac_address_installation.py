@@ -1,9 +1,9 @@
 import time
 
-from archinstall.lib.output import info
-from archinstall.lib.profile.profiles_handler import profile_handler
-from archinstall.lib.storage import storage
-from archinstall.tui import Tui
+from runixinstall.lib.output import info
+from runixinstall.lib.profile.profiles_handler import profile_handler
+from runixinstall.lib.storage import storage
+from runixinstall.tui import Tui
 
 for _profile in profile_handler.get_mac_addr_profiles():
 	# Tailored means it's a match for this machine

@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Any
 
-from archinstall.lib.translationhandler import tr
+from runixinstall.lib.translationhandler import tr
 
 from ..locale.utils import get_kb_layout
 

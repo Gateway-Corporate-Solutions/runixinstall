@@ -14,8 +14,8 @@ msgstr ""
 msgid "[!] A log file has been created here: {} {}"
 msgstr "[!] Un fișier jurnal a fost creat aici: {}"
 
-msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Vă rog să raportați problema (și fișierul) la https://github.com/archlinux/archinstall/issues"
+msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Vă rog să raportați problema (și fișierul) la https://github.com/archlinux/runixinstall/issues"
 
 msgid "Do you really want to abort?"
 msgstr "Sunteți sigur(ă) că doriți să închideți?"
@@ -169,8 +169,8 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr "Introduceți un sistem de fișiere dorit pentru partiție: "
 
-msgid "Archinstall language"
-msgstr "Limba pentru Archinstall"
+msgid "runixinstall language"
+msgstr "Limba pentru runixinstall"
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
 msgstr "Șterge toate discurile selectate și folosește cea mai bună schemă de partiționare"
@@ -301,12 +301,12 @@ msgstr "Instalalare ({} lipsă configurație(ii))"
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 "Ați decis să treceți peste selectarea discurilor dure\n"
 "și se va folosi orice configurație de disc montată la {} (experimental)\n"
-"ATENȚIE: Archinstall nu va verifica compatibilitatea configurării\n"
+"ATENȚIE: runixinstall nu va verifica compatibilitatea configurării\n"
 "Doriți să continuați?"
 
 msgid "Re-using partition instance: {}"
@@ -445,8 +445,8 @@ msgstr ""
 msgid "Pacman is already running, waiting maximum 10 minutes for it to terminate."
 msgstr "Pacman rulează deja, aștept maxim 10 minute pentru a termina."
 
-msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall."
-msgstr "Procesul pacman anterior nu s-a terminat corect. Vă rog, ștergeți orice sesiune de pacman existentă înainte de a continuea cu archinstall."
+msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall."
+msgstr "Procesul pacman anterior nu s-a terminat corect. Vă rog, ștergeți orice sesiune de pacman existentă înainte de a continuea cu runixinstall."
 
 msgid "Choose which optional additional repositories to enable"
 msgstr "Alegeți ce colecție opțională de pachete să fie activată"
@@ -838,8 +838,8 @@ msgstr "Pentru a putea folosi această traducere, vă rog să instalați  manual
 msgid "The font should be stored as {}"
 msgstr "Fontul ar trebui salvat ca {}"
 
-msgid "Archinstall requires root privileges to run. See --help for more."
-msgstr "Archinstall necesită privilegii avansate pentru execuție. Vedeți --help pentru mai multe."
+msgid "runixinstall requires root privileges to run. See --help for more."
+msgstr "runixinstall necesită privilegii avansate pentru execuție. Vedeți --help pentru mai multe."
 
 msgid "Select an execution mode"
 msgstr "Selectați un mod de execuție"
@@ -1256,7 +1256,7 @@ msgstr ""
 msgid "Waiting for time sync (timedatectl show) to complete."
 msgstr ""
 
-msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
+msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
 msgstr ""
 
 msgid "Skipping waiting for automatic time sync (this can cause issues if time is out of sync during installation)"
@@ -1269,7 +1269,7 @@ msgstr ""
 msgid "Selected profiles: "
 msgstr "Șterge profil"
 
-msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
+msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
 msgstr ""
 
 #, fuzzy
@@ -1359,8 +1359,8 @@ msgid "No"
 msgstr ""
 
 #, fuzzy
-msgid "Archinstall help"
-msgstr "Limba pentru Archinstall"
+msgid "runixinstall help"
+msgstr "Limba pentru runixinstall"
 
 #, fuzzy
 msgid " (default)"
@@ -1542,8 +1542,8 @@ msgid "Disabled"
 msgstr ""
 
 #, fuzzy
-msgid "Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Vă rog să raportați problema (și fișierul) la https://github.com/archlinux/archinstall/issues"
+msgid "Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Vă rog să raportați problema (și fișierul) la https://github.com/archlinux/runixinstall/issues"
 
 #, fuzzy
 msgid "Mirror name"
@@ -1777,8 +1777,8 @@ msgid "Package group:"
 msgstr ""
 
 #, fuzzy
-msgid "Exit archinstall"
-msgstr "Limba pentru Archinstall"
+msgid "Exit runixinstall"
+msgstr "Limba pentru runixinstall"
 
 #, fuzzy
 msgid "Reboot system"

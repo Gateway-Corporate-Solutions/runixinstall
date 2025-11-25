@@ -1,13 +1,13 @@
 from pathlib import Path
 
-from archinstall import debug, error
-from archinstall.lib.args import arch_config_handler
-from archinstall.lib.configuration import ConfigurationOutput
-from archinstall.lib.disk.filesystem import FilesystemHandler
-from archinstall.lib.disk.utils import disk_layouts
-from archinstall.lib.global_menu import GlobalMenu
-from archinstall.lib.installer import Installer
-from archinstall.tui import Tui
+from runixinstall import debug, error
+from runixinstall.lib.args import arch_config_handler
+from runixinstall.lib.configuration import ConfigurationOutput
+from runixinstall.lib.disk.filesystem import FilesystemHandler
+from runixinstall.lib.disk.utils import disk_layouts
+from runixinstall.lib.global_menu import GlobalMenu
+from runixinstall.lib.installer import Installer
+from runixinstall.tui import Tui
 
 
 def ask_user_questions() -> None:
@@ -15,7 +15,7 @@ def ask_user_questions() -> None:
 		global_menu = GlobalMenu(arch_config_handler.config)
 		global_menu.disable_all()
 
-		global_menu.set_enabled('archinstall_language', True)
+		global_menu.set_enabled('runixinstall_language', True)
 		global_menu.set_enabled('disk_config', True)
 		global_menu.set_enabled('swap', True)
 		global_menu.set_enabled('__config__', True)

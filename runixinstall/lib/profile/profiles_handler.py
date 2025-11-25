@@ -10,7 +10,7 @@ from tempfile import NamedTemporaryFile
 from types import ModuleType
 from typing import TYPE_CHECKING, NotRequired, TypedDict
 
-from archinstall.lib.translationhandler import tr
+from runixinstall.lib.translationhandler import tr
 
 from ...default_profiles.profile import GreeterType, Profile
 from ..hardware import GfxDriver
@@ -78,7 +78,7 @@ class ProfileHandler:
 				self._import_profile_from_url(url_path)
 
 		# if custom := profile_config.get('custom', None):
-		# 	from archinstall.default_profiles.custom import CustomTypeProfile
+		# 	from runixinstall.default_profiles.custom import CustomTypeProfile
 		# 	custom_types = []
 		#
 		# 	for entry in custom:
@@ -112,7 +112,7 @@ class ProfileHandler:
 
 		if details:
 			for detail in filter(None, details):
-				# [2024-04-19] TODO: Backwards compatibility after naming change: https://github.com/archlinux/archinstall/pull/2421
+				# [2024-04-19] TODO: Backwards compatibility after naming change: https://github.com/archlinux/runixinstall/pull/2421
 				#                    'Kde' is deprecated, remove this block in a future version
 				if detail == 'Kde':
 					detail = 'KDE Plasma'
@@ -226,7 +226,7 @@ class ProfileHandler:
 
 		if driver in [GfxDriver.NvidiaOpenKernel, GfxDriver.NvidiaProprietary]:
 			headers = [f'{kernel}-headers' for kernel in install_session.kernels]
-			# Fixes https://github.com/archlinux/archinstall/issues/585
+			# Fixes https://github.com/archlinux/runixinstall/issues/585
 			install_session.add_additional_packages(headers)
 
 		driver_pkgs = driver.gfx_packages()

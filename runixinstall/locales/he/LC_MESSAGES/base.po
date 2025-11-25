@@ -14,8 +14,8 @@ msgstr ""
 msgid "[!] A log file has been created here: {} {}"
 msgstr "[!] כאן נוצר קובץ היומן: {} {}"
 
-msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    נא להגיש דיווח על הבעיה הזאת (ואת הקובץ) דרך https://github.com/archlinux/archinstall/issues"
+msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    נא להגיש דיווח על הבעיה הזאת (ואת הקובץ) דרך https://github.com/archlinux/runixinstall/issues"
 
 msgid "Do you really want to abort?"
 msgstr "לבטל את התהליך?"
@@ -169,8 +169,8 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr "נא לציין סוג מערכת קבצים רצויה למחיצה: "
 
-msgid "Archinstall language"
-msgstr "השפה של Archinstall"
+msgid "runixinstall language"
+msgstr "השפה של runixinstall"
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
 msgstr "למחוק את כל הכוננים הנבחרים ולהשתמש בפריסת מחיצות כברירת מחדל על בסיס מאמץ מיטבי"
@@ -301,14 +301,14 @@ msgstr "התקנה ({} הגדרות חסרות)"
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 "החלטת לוותר על בחירת כוננים קשיחים\n"
 "‬\n"
 "‫ולהשתמש בתצורת הכוננים שמעוגנת על {} כמו שהיא (ניסיוני)\n"
 "‬\n"
-"‫אזהרה: Archinstall won't check the suitability of this setup\n"
+"‫אזהרה: runixinstall won't check the suitability of this setup\n"
 "‬\n"
 "‏‫Do you wish to continue?"
 
@@ -448,8 +448,8 @@ msgstr ""
 msgid "Pacman is already running, waiting maximum 10 minutes for it to terminate."
 msgstr "‫Pacman כבר פועל, נמתין למשך 10 דקות לכל היותר עד לסיומו."
 
-msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall."
-msgstr "נעילת ה־pacman הקודמת מעולם לא נסגרה. נא לנקות הפעלות קיימות של pacman בטרם הפעלת archinstall."
+msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall."
+msgstr "נעילת ה־pacman הקודמת מעולם לא נסגרה. נא לנקות הפעלות קיימות של pacman בטרם הפעלת runixinstall."
 
 msgid "Choose which optional additional repositories to enable"
 msgstr "נא לבחור אילו מאגרים נוספים להפעיל כרשות"
@@ -845,8 +845,8 @@ msgstr "כדי להשתמש בתרגום הזה, נא להתקין את הגופ
 msgid "The font should be stored as {}"
 msgstr "יש לאחסן את הגופן בתור {}"
 
-msgid "Archinstall requires root privileges to run. See --help for more."
-msgstr "‫Archinstall דורש הרשאות עליונות (root) כדי לעלות. ‎--help לקבלת מידע נוסף."
+msgid "runixinstall requires root privileges to run. See --help for more."
+msgstr "‫runixinstall דורש הרשאות עליונות (root) כדי לעלות. ‎--help לקבלת מידע נוסף."
 
 msgid "Select an execution mode"
 msgstr "נא לבחור מצב הפעלה"
@@ -1260,8 +1260,8 @@ msgstr "דמויות ליבה אחודות"
 msgid "Waiting for time sync (timedatectl show) to complete."
 msgstr "בהמתנה להשלמת סנכרון השעון (timedatectl show)."
 
-msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "סנכרון זמן לא מסתיים, בזמן ההמתנה - כדאי לחפש צורות לעקוף את זה במסמכים: https://archinstall.readthedocs.io/‎"
+msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "סנכרון זמן לא מסתיים, בזמן ההמתנה - כדאי לחפש צורות לעקוף את זה במסמכים: https://runixinstall.readthedocs.io/‎"
 
 msgid "Skipping waiting for automatic time sync (this can cause issues if time is out of sync during installation)"
 msgstr "לדלג על המתנה לסנכרון השעון אוטומטית (יכול לגרום לבעיות אם השעה לא מסונכרנת במהלך ההתקנה)"
@@ -1272,8 +1272,8 @@ msgstr "בהמתנה לסיום סנכרון מחזיק מפתחות של Arch L
 msgid "Selected profiles: "
 msgstr "פרופילים נבחרים: "
 
-msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "סנכרון זמן לא מסתיים, בזמן ההמתנה - אפשר לחפש צורות לעקוף את זה במסמכים: https://archinstall.readthedocs.io/‎"
+msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "סנכרון זמן לא מסתיים, בזמן ההמתנה - אפשר לחפש צורות לעקוף את זה במסמכים: https://runixinstall.readthedocs.io/‎"
 
 msgid "Mark/Unmark as nodatacow"
 msgstr "סימון/ביטול סימון כ־nodatacow"
@@ -1348,8 +1348,8 @@ msgstr "כן"
 msgid "No"
 msgstr "לא"
 
-msgid "Archinstall help"
-msgstr "העזרה של Archinstall"
+msgid "runixinstall help"
+msgstr "העזרה של runixinstall"
 
 msgid " (default)"
 msgstr " (ברירת מחדל)"
@@ -1494,8 +1494,8 @@ msgstr "פעיל"
 msgid "Disabled"
 msgstr "מושבת"
 
-msgid "Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "נא להגיש דיווח על הבעיה הזאת (ואת הקובץ) דרך https://github.com/archlinux/archinstall/issues"
+msgid "Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "נא להגיש דיווח על הבעיה הזאת (ואת הקובץ) דרך https://github.com/archlinux/runixinstall/issues"
 
 msgid "Mirror name"
 msgstr "שם אתר המראה"
@@ -1712,8 +1712,8 @@ msgid "Package group:"
 msgstr ""
 
 #, fuzzy
-msgid "Exit archinstall"
-msgstr "העזרה של Archinstall"
+msgid "Exit runixinstall"
+msgstr "העזרה של runixinstall"
 
 #, fuzzy
 msgid "Reboot system"

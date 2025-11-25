@@ -14,8 +14,8 @@ msgstr ""
 msgid "[!] A log file has been created here: {} {}"
 msgstr "[!] File log telah dibuat di sini: {} {}"
 
-msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Silakan kirimkan masalah ini (dan file) ke https://github.com/archlinux/archinstall/issues"
+msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Silakan kirimkan masalah ini (dan file) ke https://github.com/archlinux/runixinstall/issues"
 
 msgid "Do you really want to abort?"
 msgstr "Apakah Anda benar-benar ingin membatalkan?"
@@ -169,8 +169,8 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr "Masukkan jenis filesystem yang diinginkan untuk partisi: "
 
-msgid "Archinstall language"
-msgstr "Bahasa Archinstall"
+msgid "runixinstall language"
+msgstr "Bahasa runixinstall"
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
 msgstr "Hapus semua drive yang dipilih dan gunakan upaya terbaik tata letak partisi default"
@@ -301,12 +301,12 @@ msgstr "Instal ({} konfigurasi tidak ada)"
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 "Anda memutuskan untuk melewati pemilihan harddisk\n"
 "dan akan menggunakan pengaturan drive apa pun yang dipasang di {} (eksperimental)\n"
-"PERINGATAN: Archinstall tidak akan memeriksa kesesuaian pengaturan ini\n"
+"PERINGATAN: runixinstall tidak akan memeriksa kesesuaian pengaturan ini\n"
 "Apakah Anda ingin melanjutkan?"
 
 msgid "Re-using partition instance: {}"
@@ -445,8 +445,8 @@ msgstr ""
 msgid "Pacman is already running, waiting maximum 10 minutes for it to terminate."
 msgstr "Pacman sudah berjalan, menunggu maksimal 10 menit untuk berhenti."
 
-msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall."
-msgstr "Pacman lock yang sudah ada tidak pernah keluar. Harap bersihkan sesi pacman yang ada sebelum menggunakan archinstall."
+msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall."
+msgstr "Pacman lock yang sudah ada tidak pernah keluar. Harap bersihkan sesi pacman yang ada sebelum menggunakan runixinstall."
 
 msgid "Choose which optional additional repositories to enable"
 msgstr "Pilih repositori tambahan opsional mana yang akan diaktifkan"
@@ -838,7 +838,7 @@ msgstr ""
 msgid "The font should be stored as {}"
 msgstr ""
 
-msgid "Archinstall requires root privileges to run. See --help for more."
+msgid "runixinstall requires root privileges to run. See --help for more."
 msgstr ""
 
 #, fuzzy
@@ -1299,7 +1299,7 @@ msgstr ""
 msgid "Waiting for time sync (timedatectl show) to complete."
 msgstr ""
 
-msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
+msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
 msgstr ""
 
 msgid "Skipping waiting for automatic time sync (this can cause issues if time is out of sync during installation)"
@@ -1312,7 +1312,7 @@ msgstr ""
 msgid "Selected profiles: "
 msgstr "Hapus interface"
 
-msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
+msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
 msgstr ""
 
 #, fuzzy
@@ -1402,8 +1402,8 @@ msgid "No"
 msgstr ""
 
 #, fuzzy
-msgid "Archinstall help"
-msgstr "Bahasa Archinstall"
+msgid "runixinstall help"
+msgstr "Bahasa runixinstall"
 
 #, fuzzy
 msgid " (default)"
@@ -1573,8 +1573,8 @@ msgid "Disabled"
 msgstr ""
 
 #, fuzzy
-msgid "Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Silakan kirimkan masalah ini (dan file) ke https://github.com/archlinux/archinstall/issues"
+msgid "Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Silakan kirimkan masalah ini (dan file) ke https://github.com/archlinux/runixinstall/issues"
 
 #, fuzzy
 msgid "Mirror name"
@@ -1792,8 +1792,8 @@ msgid "Package group:"
 msgstr ""
 
 #, fuzzy
-msgid "Exit archinstall"
-msgstr "Bahasa Archinstall"
+msgid "Exit runixinstall"
+msgstr "Bahasa runixinstall"
 
 msgid "Reboot system"
 msgstr ""

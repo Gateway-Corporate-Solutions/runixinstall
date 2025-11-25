@@ -1,6 +1,6 @@
 # Nationalization
 
-Archinstall supports multiple languages, which depend on translations coming from the community :)
+runixinstall supports multiple languages, which depend on translations coming from the community :)
 
 ## Important Note
 Before starting a new language translation be aware that a font for that language may not be
@@ -47,4 +47,4 @@ msgstr "Wollen sie wirklich abbrechen?"
 
 After the translations have been written, run the script once more `./locales_generator.sh <lang_abbr>` and it will auto-generate the `base.mo` file with the included translations.
 
-After that you're all ready to go and enjoy Archinstall in the new language :)
+After that you're all ready to go and enjoy runixinstall in the new language :)

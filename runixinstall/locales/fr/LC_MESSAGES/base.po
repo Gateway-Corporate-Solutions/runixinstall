@@ -14,8 +14,8 @@ msgstr ""
 msgid "[!] A log file has been created here: {} {}"
 msgstr "[!] Un fichier journal a été créé ici : {} {}"
 
-msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Veuillez soumettre ce problème (et le fichier) à https://github.com/archlinux/archinstall/issues"
+msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Veuillez soumettre ce problème (et le fichier) à https://github.com/archlinux/runixinstall/issues"
 
 msgid "Do you really want to abort?"
 msgstr "Voulez-vous vraiment abandonner ?"
@@ -169,8 +169,8 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr "Entrer un type de système de fichiers souhaité pour la partition : "
 
-msgid "Archinstall language"
-msgstr "Langue d'Archinstall"
+msgid "runixinstall language"
+msgstr "Langue d'runixinstall"
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
 msgstr "Effacer tous les lecteurs sélectionnés et utiliser une disposition de partition par défaut optimale"
@@ -301,12 +301,12 @@ msgstr "Installer ({} configuration(s) manquante(s))"
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 "Vous avez décidé d'ignorer la sélection du disque dur\n"
 "et vous utiliserez la configuration de disque montée sur {} (expérimental)\n"
-"ATTENTION : Archinstall ne vérifiera pas l'adéquation de cette configuration\n"
+"ATTENTION : runixinstall ne vérifiera pas l'adéquation de cette configuration\n"
 "Souhaitez-vous continuer ?"
 
 msgid "Re-using partition instance: {}"
@@ -445,8 +445,8 @@ msgstr ""
 msgid "Pacman is already running, waiting maximum 10 minutes for it to terminate."
 msgstr "Pacman est déjà en cours d'exécution, attendez au maximum 10 minutes pour qu'il se termine."
 
-msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall."
-msgstr "Le verrou pacman préexistant n'a jamais été fermé. Veuillez nettoyer toutes les sessions pacman existantes avant d'utiliser archinstall."
+msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall."
+msgstr "Le verrou pacman préexistant n'a jamais été fermé. Veuillez nettoyer toutes les sessions pacman existantes avant d'utiliser runixinstall."
 
 msgid "Choose which optional additional repositories to enable"
 msgstr "Choisir les dépôts supplémentaires en option à activer"
@@ -838,8 +838,8 @@ msgstr "Pour pouvoir utiliser cette traduction, veuillez installer manuellement 
 msgid "The font should be stored as {}"
 msgstr "La police d'écriture doit être stockée sous {}"
 
-msgid "Archinstall requires root privileges to run. See --help for more."
-msgstr "Archinstall nécessite des privilèges root pour s'exécuter. Voir --help pour plus d'informations."
+msgid "runixinstall requires root privileges to run. See --help for more."
+msgstr "runixinstall nécessite des privilèges root pour s'exécuter. Voir --help pour plus d'informations."
 
 msgid "Select an execution mode"
 msgstr "Sélectionner un mode d'exécution"
@@ -1252,8 +1252,8 @@ msgstr "Images du noyau unifiées"
 msgid "Waiting for time sync (timedatectl show) to complete."
 msgstr "En attente de la fin de la synchronisation de l'heure (timedatectl show) de finir."
 
-msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "La synchronisation de l'heure ne se termine pas, veuillez consulter la documentation afin de trouver des solutions de contournement : https://archinstall.readthedocs.io/"
+msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "La synchronisation de l'heure ne se termine pas, veuillez consulter la documentation afin de trouver des solutions de contournement : https://runixinstall.readthedocs.io/"
 
 msgid "Skipping waiting for automatic time sync (this can cause issues if time is out of sync during installation)"
 msgstr "Ignorer l'attente de la synchronisation automatique de l'heure (cela peut entraîner des problèmes si l'heure n'est pas synchronisée lors de l'installation)"
@@ -1264,8 +1264,8 @@ msgstr "En attente de la fin de la synchronisation du trousseau de clés d'Arch 
 msgid "Selected profiles: "
 msgstr "Profils sélectionnés : "
 
-msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "La synchronisation de l'heure ne se termine pas, veuillez consulter la documentation afin de trouver des solutions de contournement : https://archinstall.readthedocs.io/"
+msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "La synchronisation de l'heure ne se termine pas, veuillez consulter la documentation afin de trouver des solutions de contournement : https://runixinstall.readthedocs.io/"
 
 msgid "Mark/Unmark as nodatacow"
 msgstr "Marquer/Démarquer comme nodatacow"
@@ -1340,8 +1340,8 @@ msgstr "Oui"
 msgid "No"
 msgstr "Non"
 
-msgid "Archinstall help"
-msgstr "Aide pour Archinstall"
+msgid "runixinstall help"
+msgstr "Aide pour runixinstall"
 
 msgid " (default)"
 msgstr " (par défaut)"
@@ -1486,8 +1486,8 @@ msgstr "Activé"
 msgid "Disabled"
 msgstr "Désactivé"
 
-msgid "Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "Veuillez soumettre ce problème (et fichier) à https://github.com/archlinux/archinstall/issues"
+msgid "Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "Veuillez soumettre ce problème (et fichier) à https://github.com/archlinux/runixinstall/issues"
 
 msgid "Mirror name"
 msgstr "Nom du miroir"
@@ -1679,8 +1679,8 @@ msgid "Package group:"
 msgstr "Groupe de paquets :"
 
 #, fuzzy
-msgid "Exit archinstall"
-msgstr "Sortir d'Archinstall"
+msgid "Exit runixinstall"
+msgstr "Sortir d'runixinstall"
 
 #, fuzzy
 msgid "Reboot system"

@@ -1,11 +1,11 @@
 import textwrap
 from typing import override
 
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import SelectMenu
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
-from archinstall.tui.result import ResultType
-from archinstall.tui.types import Alignment, FrameProperties, Orientation
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import SelectMenu
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.tui.result import ResultType
+from runixinstall.tui.types import Alignment, FrameProperties, Orientation
 
 from ..args import arch_config_handler
 from ..hardware import SysInfo

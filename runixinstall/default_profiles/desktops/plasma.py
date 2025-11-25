@@ -1,8 +1,8 @@
 from typing import override
 
-from archinstall.default_profiles.profile import GreeterType, ProfileType
-from archinstall.default_profiles.xorg import XorgProfile
-from archinstall.lib.installer import Installer
+from runixinstall.default_profiles.profile import GreeterType, ProfileType
+from runixinstall.default_profiles.xorg import XorgProfile
+from runixinstall.lib.installer import Installer
 
 
 class PlasmaProfile(XorgProfile):

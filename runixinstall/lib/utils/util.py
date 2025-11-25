@@ -1,9 +1,9 @@
 from pathlib import Path
 
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import EditMenu
-from archinstall.tui.result import ResultType
-from archinstall.tui.types import Alignment
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import EditMenu
+from runixinstall.tui.result import ResultType
+from runixinstall.tui.types import Alignment
 
 from ..models.users import Password
 from ..output import FormattedOutput

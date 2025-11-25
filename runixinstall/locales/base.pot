@@ -9,7 +9,7 @@ msgstr ""
 
 msgid ""
 "    Please submit this issue (and file) to https://github.com/archlinux/"
-"archinstall/issues"
+"runixinstall/issues"
 msgstr ""
 
 msgid "Do you really want to abort?"
@@ -155,7 +155,7 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr ""
 
-msgid "Archinstall language"
+msgid "runixinstall language"
 msgstr ""
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
@@ -295,7 +295,7 @@ msgstr ""
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 
@@ -435,7 +435,7 @@ msgstr ""
 
 msgid ""
 "Pre-existing pacman lock never exited. Please clean up any existing pacman "
-"sessions before using archinstall."
+"sessions before using runixinstall."
 msgstr ""
 
 msgid "Choose which optional additional repositories to enable"
@@ -845,7 +845,7 @@ msgstr ""
 msgid "The font should be stored as {}"
 msgstr ""
 
-msgid "Archinstall requires root privileges to run. See --help for more."
+msgid "runixinstall requires root privileges to run. See --help for more."
 msgstr ""
 
 msgid "Select an execution mode"
@@ -1280,7 +1280,7 @@ msgstr ""
 
 msgid ""
 "Time syncronization not completing, while you wait - check the docs for "
-"workarounds: https://archinstall.readthedocs.io/"
+"workarounds: https://runixinstall.readthedocs.io/"
 msgstr ""
 
 msgid ""
@@ -1297,7 +1297,7 @@ msgstr ""
 
 msgid ""
 "Time synchronization not completing, while you wait - check the docs for "
-"workarounds: https://archinstall.readthedocs.io/"
+"workarounds: https://runixinstall.readthedocs.io/"
 msgstr ""
 
 msgid "Mark/Unmark as nodatacow"
@@ -1378,7 +1378,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-msgid "Archinstall help"
+msgid "runixinstall help"
 msgstr ""
 
 msgid " (default)"
@@ -1529,7 +1529,7 @@ msgstr ""
 
 msgid ""
 "Please submit this issue (and file) to https://github.com/archlinux/"
-"archinstall/issues"
+"runixinstall/issues"
 msgstr ""
 
 msgid "Mirror name"
@@ -1726,7 +1726,7 @@ msgstr ""
 msgid "Package group:"
 msgstr ""
 
-msgid "Exit archinstall"
+msgid "Exit runixinstall"
 msgstr ""
 
 msgid "Reboot system"

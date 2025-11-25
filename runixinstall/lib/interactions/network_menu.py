@@ -3,11 +3,11 @@ from __future__ import annotations
 import ipaddress
 from typing import assert_never, override
 
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import EditMenu, SelectMenu
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
-from archinstall.tui.result import ResultType
-from archinstall.tui.types import Alignment, FrameProperties
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import EditMenu, SelectMenu
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.tui.result import ResultType
+from runixinstall.tui.types import Alignment, FrameProperties
 
 from ..menu.list_manager import ListManager
 from ..models.network import NetworkConfiguration, Nic, NicType

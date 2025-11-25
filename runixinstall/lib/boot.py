@@ -12,13 +12,13 @@ from .storage import storage
 class Boot:
 	def __init__(self, installation: Installer):
 		self.instance = installation
-		self.container_name = 'archinstall'
+		self.container_name = 'runixinstall'
 		self.session: SysCommandWorker | None = None
 		self.ready = False
 
 	def __enter__(self) -> 'Boot':
 		if (existing_session := storage.get('active_boot', None)) and existing_session.instance != self.instance:
-			raise KeyError('Archinstall only supports booting up one instance and another session is already active.')
+			raise KeyError('runixinstall only supports booting up one instance and another session is already active.')
 
 		if existing_session:
 			self.session = existing_session.session

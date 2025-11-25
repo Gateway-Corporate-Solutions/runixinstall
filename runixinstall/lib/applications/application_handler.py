@@ -1,13 +1,13 @@
 from typing import TYPE_CHECKING
 
-from archinstall.applications.audio import AudioApp
-from archinstall.applications.bluetooth import BluetoothApp
-from archinstall.lib.models import Audio
-from archinstall.lib.models.application import ApplicationConfiguration
-from archinstall.lib.models.users import User
+from runixinstall.applications.audio import AudioApp
+from runixinstall.applications.bluetooth import BluetoothApp
+from runixinstall.lib.models import Audio
+from runixinstall.lib.models.application import ApplicationConfiguration
+from runixinstall.lib.models.users import User
 
 if TYPE_CHECKING:
-	from archinstall.lib.installer import Installer
+	from runixinstall.lib.installer import Installer
 
 
 class ApplicationHandler:

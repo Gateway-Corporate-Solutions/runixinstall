@@ -1,12 +1,12 @@
 # from typing import List, Dict, Optional, TYPE_CHECKING, Any
 #
 # from ..lib import menu
-# from archinstall.lib.output import log, FormattedOutput
-# from archinstall.lib.profile.profiles_handler import profile_handler
-# from archinstall.default_profiles.profile import Profile, ProfileType, SelectResult, ProfileInfo, TProfile
+# from runixinstall.lib.output import log, FormattedOutput
+# from runixinstall.lib.profile.profiles_handler import profile_handler
+# from runixinstall.default_profiles.profile import Profile, ProfileType, SelectResult, ProfileInfo, TProfile
 #
 # if TYPE_CHECKING:
-# 	from archinstall.lib.installer import Installer
+# 	from runixinstall.lib.installer import Installer
 # 	_: Any
 #
 #

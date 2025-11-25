@@ -2,12 +2,12 @@ from __future__ import annotations
 
 from typing import override
 
-from archinstall.default_profiles.profile import GreeterType, Profile
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import SelectMenu
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
-from archinstall.tui.result import ResultType
-from archinstall.tui.types import Alignment, FrameProperties, Orientation
+from runixinstall.default_profiles.profile import GreeterType, Profile
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import SelectMenu
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.tui.result import ResultType
+from runixinstall.tui.types import Alignment, FrameProperties, Orientation
 
 from ..hardware import GfxDriver
 from ..interactions.system_conf import select_driver
@@ -192,7 +192,7 @@ def select_profile(
 	header: str | None = None,
 	allow_reset: bool = True,
 ) -> Profile | None:
-	from archinstall.lib.profile.profiles_handler import profile_handler
+	from runixinstall.lib.profile.profiles_handler import profile_handler
 
 	top_level_profiles = profile_handler.get_top_level_profiles()
 

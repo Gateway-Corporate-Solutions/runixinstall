@@ -11,7 +11,7 @@ from curses.textpad import Textbox
 from types import FrameType, TracebackType
 from typing import Literal, override
 
-from archinstall.lib.translationhandler import tr
+from runixinstall.lib.translationhandler import tr
 
 from .help import Help
 from .menu_item import MenuItem, MenuItemGroup, MenuItemsState
@@ -62,7 +62,7 @@ class AbstractCurses[ValueT](metaclass=ABCMeta):
 			height,
 			x_start,
 			int((max_height / 2) - height / 2),
-			frame=FrameProperties.min(tr('Archinstall help')),
+			frame=FrameProperties.min(tr('runixinstall help')),
 		)
 
 	def _confirm_interrupt(self, warning: str) -> bool:

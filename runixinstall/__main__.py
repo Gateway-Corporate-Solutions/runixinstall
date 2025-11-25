@@ -1,4 +1,4 @@
-import archinstall
+import runixinstall
 
 if __name__ == '__main__':
-	archinstall.run_as_a_module()
+	runixinstall.run_as_a_module()

@@ -6,12 +6,12 @@ import sys
 import time
 import traceback
 
-from archinstall.lib.args import arch_config_handler
-from archinstall.lib.disk.utils import disk_layouts
-from archinstall.lib.network.wifi_handler import wifi_handler
-from archinstall.lib.networking import ping
-from archinstall.lib.packages.packages import check_package_upgrade
-from archinstall.tui.ui.components import tui as ttui
+from runixinstall.lib.args import arch_config_handler
+from runixinstall.lib.disk.utils import disk_layouts
+from runixinstall.lib.network.wifi_handler import wifi_handler
+from runixinstall.lib.networking import ping
+from runixinstall.lib.packages.packages import check_package_upgrade
+from runixinstall.tui.ui.components import tui as ttui
 
 from .lib.hardware import SysInfo
 from .lib.output import FormattedOutput, debug, error, info, log, warn
@@ -21,7 +21,7 @@ from .lib.translationhandler import Language, tr, translation_handler
 from .tui.curses_menu import Tui
 
 
-# @archinstall.plugin decorator hook to programmatically add
+# @runixinstall.plugin decorator hook to programmatically add
 # plugins in runtime. Useful in profiles_bck and other things.
 def plugin(f, *args, **kwargs) -> None:  # type: ignore[no-untyped-def]
 	plugins[f.__name__] = f
@@ -59,7 +59,7 @@ def _fetch_arch_db() -> None:
 		if 'could not resolve host' in str(e).lower():
 			error('Most likely due to a missing network connection or DNS issue.')
 
-		error('Run archinstall --debug and check /var/log/archinstall/install.log for details.')
+		error('Run runixinstall --debug and check /var/log/runixinstall/install.log for details.')
 
 		debug(f'Failed to sync Arch Linux package database: {e}')
 		exit(1)
@@ -69,10 +69,10 @@ def check_version_upgrade() -> str | None:
 	info('Checking version...')
 	upgrade = None
 
-	upgrade = check_package_upgrade('archinstall')
+	upgrade = check_package_upgrade('runixinstall')
 
 	if upgrade is None:
-		debug('No archinstall upgrades found')
+		debug('No runixinstall upgrades found')
 		return None
 
 	text = tr('New version available') + f': {upgrade}'
@@ -83,7 +83,7 @@ def check_version_upgrade() -> str | None:
 def main() -> int:
 	"""
 	This can either be run as the compiled and installed application: python setup.py install
-	OR straight as a module: python -m archinstall
+	OR straight as a module: python -m runixinstall
 	In any case we will be attempting to load the provided script to be run from the scripts/ folder
 	"""
 	if '--help' in sys.argv or '-h' in sys.argv:
@@ -91,12 +91,12 @@ def main() -> int:
 		return 0
 
 	if os.getuid() != 0:
-		print(tr('Archinstall requires root privileges to run. See --help for more.'))
+		print(tr('runixinstall requires root privileges to run. See --help for more.'))
 		return 1
 
 	_log_sys_info()
 
-	ttui.global_header = 'Archinstall'
+	ttui.global_header = 'runixinstall'
 
 	if not arch_config_handler.args.offline:
 		_check_online()
@@ -112,7 +112,7 @@ def main() -> int:
 
 	script = arch_config_handler.get_script()
 
-	mod_name = f'archinstall.scripts.{script}'
+	mod_name = f'runixinstall.scripts.{script}'
 	# by loading the module we'll automatically run the script
 	importlib.import_module(mod_name)
 
@@ -136,9 +136,9 @@ def run_as_a_module() -> None:
 			error(err)
 
 			text = (
-				'Archinstall experienced the above error. If you think this is a bug, please report it to\n'
-				'https://github.com/archlinux/archinstall and include the log file "/var/log/archinstall/install.log".\n\n'
-				"Hint: To extract the log from a live ISO \ncurl -F'file=@/var/log/archinstall/install.log' https://0x0.st\n"
+				'runixinstall experienced the above error. If you think this is a bug, please report it to\n'
+				'https://github.com/archlinux/runixinstall and include the log file "/var/log/runixinstall/install.log".\n\n'
+				"Hint: To extract the log from a live ISO \ncurl -F'file=@/var/log/runixinstall/install.log' https://0x0.st\n"
 			)
 
 			warn(text)

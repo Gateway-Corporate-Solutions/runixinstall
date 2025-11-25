@@ -14,8 +14,8 @@ msgstr ""
 msgid "[!] A log file has been created here: {} {}"
 msgstr "[!] Žurnalo failas įrašytas čia: {} {}"
 
-msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Prašome pateiktį šitą problemą (ir failą) https://github.com/archlinux/archinstall/issues"
+msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Prašome pateiktį šitą problemą (ir failą) https://github.com/archlinux/runixinstall/issues"
 
 msgid "Do you really want to abort?"
 msgstr "Ar jus noritė nutraukti?"
@@ -149,8 +149,8 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr ""
 
-msgid "Archinstall language"
-msgstr "Archinstall liežuvis"
+msgid "runixinstall language"
+msgstr "runixinstall liežuvis"
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
 msgstr ""
@@ -278,7 +278,7 @@ msgstr "Įdiegti ({} config(s) missing)"
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 
@@ -410,7 +410,7 @@ msgstr ""
 msgid "Pacman is already running, waiting maximum 10 minutes for it to terminate."
 msgstr ""
 
-msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall."
+msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall."
 msgstr ""
 
 msgid "Choose which optional additional repositories to enable"
@@ -789,7 +789,7 @@ msgstr ""
 msgid "The font should be stored as {}"
 msgstr ""
 
-msgid "Archinstall requires root privileges to run. See --help for more."
+msgid "runixinstall requires root privileges to run. See --help for more."
 msgstr ""
 
 msgid "Select an execution mode"
@@ -1187,7 +1187,7 @@ msgstr ""
 msgid "Waiting for time sync (timedatectl show) to complete."
 msgstr ""
 
-msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
+msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
 msgstr ""
 
 msgid "Skipping waiting for automatic time sync (this can cause issues if time is out of sync during installation)"
@@ -1200,7 +1200,7 @@ msgstr ""
 msgid "Selected profiles: "
 msgstr "Pašalinti profilį"
 
-msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
+msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
 msgstr ""
 
 msgid "Mark/Unmark as nodatacow"
@@ -1282,8 +1282,8 @@ msgid "No"
 msgstr ""
 
 #, fuzzy
-msgid "Archinstall help"
-msgstr "Archinstall liežuvis"
+msgid "runixinstall help"
+msgstr "runixinstall liežuvis"
 
 msgid " (default)"
 msgstr ""
@@ -1437,8 +1437,8 @@ msgid "Disabled"
 msgstr ""
 
 #, fuzzy
-msgid "Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Prašome pateiktį šitą problemą (ir failą) https://github.com/archlinux/archinstall/issues"
+msgid "Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Prašome pateiktį šitą problemą (ir failą) https://github.com/archlinux/runixinstall/issues"
 
 msgid "Mirror name"
 msgstr ""
@@ -1645,8 +1645,8 @@ msgid "Package group:"
 msgstr ""
 
 #, fuzzy
-msgid "Exit archinstall"
-msgstr "Archinstall liežuvis"
+msgid "Exit runixinstall"
+msgstr "runixinstall liežuvis"
 
 msgid "Reboot system"
 msgstr ""

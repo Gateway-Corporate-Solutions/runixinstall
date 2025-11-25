@@ -2,8 +2,8 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any, NotRequired, TypedDict
 
-from archinstall.lib.models.users import Password, User
-from archinstall.lib.translationhandler import tr
+from runixinstall.lib.models.users import Password, User
+from runixinstall.lib.translationhandler import tr
 
 
 class U2FLoginConfigSerialization(TypedDict):

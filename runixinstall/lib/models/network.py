@@ -5,13 +5,13 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import TYPE_CHECKING, NotRequired, TypedDict, override
 
-from archinstall.lib.output import debug
-from archinstall.lib.translationhandler import tr
+from runixinstall.lib.output import debug
+from runixinstall.lib.translationhandler import tr
 
 from ..models.profile import ProfileConfiguration
 
 if TYPE_CHECKING:
-	from archinstall.lib.installer import Installer
+	from runixinstall.lib.installer import Installer
 
 
 class NicType(Enum):

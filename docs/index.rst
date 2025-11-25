@@ -1,20 +1,20 @@
-archinstall Documentation
+runixinstall Documentation
 =========================
 
-**archinstall** is library which can be used to install Arch Linux.
+**runixinstall** is library which can be used to install Arch Linux.
 The library comes packaged with different pre-configured installers, such as the default :ref:`guided` installer.
 
-Some of the features of Archinstall are:
+Some of the features of runixinstall are:
 
 * **Context friendly.** The library always executes calls in sequential order to ensure installation-steps don't overlap or execute in the wrong order. It also supports *(and uses)* context wrappers to ensure cleanup and final tasks such as ``mkinitcpio`` are called when needed.
 
-* **Full transparency** Logs and insights can be found at ``/var/log/archinstall`` both in the live ISO and partially on the installed system.
+* **Full transparency** Logs and insights can be found at ``/var/log/runixinstall`` both in the live ISO and partially on the installed system.
 
-* **Accessibility friendly** Archinstall works with ``espeakup`` and other accessibility tools thanks to the use of a TUI.
+* **Accessibility friendly** runixinstall works with ``espeakup`` and other accessibility tools thanks to the use of a TUI.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Running Archinstall
+   :caption: Running runixinstall
 
    installing/guided
 
@@ -28,14 +28,14 @@ Some of the features of Archinstall are:
 
 .. toctree::
    :maxdepth: 3
-   :caption: Archinstall as a library
+   :caption: runixinstall as a library
 
    installing/python
    examples/python
-   archinstall/plugins
+   runixinstall/plugins
 
 .. toctree::
    :maxdepth: 3
    :caption: API Reference
 
-   archinstall/Installer
+   runixinstall/Installer

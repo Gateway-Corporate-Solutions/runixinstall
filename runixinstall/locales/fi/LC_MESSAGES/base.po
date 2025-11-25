@@ -15,8 +15,8 @@ msgstr ""
 msgid "[!] A log file has been created here: {} {}"
 msgstr "[!] Lokitiedosto luotiin tähän: {} {}"
 
-msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Lähetä tämä ongelma (ja tiedosto) osoitteeseen https://github.com/archlinux/archinstall/issues"
+msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Lähetä tämä ongelma (ja tiedosto) osoitteeseen https://github.com/archlinux/runixinstall/issues"
 
 msgid "Do you really want to abort?"
 msgstr "Haluatko todella poistua?"
@@ -170,8 +170,8 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr "Anna osiolle haluttu tiedostojärjestelmän tyyppi: "
 
-msgid "Archinstall language"
-msgstr "Archinstall kieli"
+msgid "runixinstall language"
+msgstr "runixinstall kieli"
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
 msgstr "Pyyhi kaikki valitut asemat ja käytä parasta mahdollista oletusosion asettelua"
@@ -302,12 +302,12 @@ msgstr "Asenna ({} asetusta puuttuu)"
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 "Päätit ohittaa kiintolevyn valinnan ja käyttää\n"
 "mitä tahansa asema-asetusta {} (kokeellinen)\n"
-"VAROITUS: Archinstall ei voi tarkista asennuksen sopivuutta\n"
+"VAROITUS: runixinstall ei voi tarkista asennuksen sopivuutta\n"
 "Haluatko jatkaa?"
 
 msgid "Re-using partition instance: {}"
@@ -446,8 +446,8 @@ msgstr ""
 msgid "Pacman is already running, waiting maximum 10 minutes for it to terminate."
 msgstr "Pacman on jo käynnissä, odota enintään 10 minuuttia sen päättymistä."
 
-msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall."
-msgstr "Aiempi pacman-lukko ei ole poistunut. Lopeta kaikki olemassa olevat pacman-istunnot ennen archinstall ohjelman käyttöä."
+msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall."
+msgstr "Aiempi pacman-lukko ei ole poistunut. Lopeta kaikki olemassa olevat pacman-istunnot ennen runixinstall ohjelman käyttöä."
 
 msgid "Choose which optional additional repositories to enable"
 msgstr "Valitse, valinnaiset lisävarastot jotka otetaan käyttöön"
@@ -839,8 +839,8 @@ msgstr "Jotta voit käyttää tätä käännöstä, asenna käsin fontti, joka t
 msgid "The font should be stored as {}"
 msgstr "Fontti tulee tallentaa {}"
 
-msgid "Archinstall requires root privileges to run. See --help for more."
-msgstr "Archinstall vaatii toimiakseen root oikeudet. Katso --help ja saat lisätietoja."
+msgid "runixinstall requires root privileges to run. See --help for more."
+msgstr "runixinstall vaatii toimiakseen root oikeudet. Katso --help ja saat lisätietoja."
 
 msgid "Select an execution mode"
 msgstr "Valitse suoritustila"
@@ -1253,8 +1253,8 @@ msgstr "UKI Unified Kernel Images"
 msgid "Waiting for time sync (timedatectl show) to complete."
 msgstr "Odotetaan ajan synkronoinnin (timedatectl show) päättymistä."
 
-msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "Ajan synkronointi ei ole valmis, kun odotat voit tarkistaa kiertotapoja: https://archinstall.readthedocs.io/"
+msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "Ajan synkronointi ei ole valmis, kun odotat voit tarkistaa kiertotapoja: https://runixinstall.readthedocs.io/"
 
 msgid "Skipping waiting for automatic time sync (this can cause issues if time is out of sync during installation)"
 msgstr "Autom. ajan synkronoinnin odottaminen ohitetaan (voi aiheuttaa ongelmia, jos aikaa ei ole synkronoitu asennuksen aikana)"
@@ -1265,8 +1265,8 @@ msgstr "Odotetaan Arch Linux avainten synkronoinnin valmistumista (archlinux-key
 msgid "Selected profiles: "
 msgstr "Valitut profiilit: "
 
-msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "Ajan synkronointi ei ole valmis, kun odotat voit tarkistaa kiertotapoja: https://archinstall.readthedocs.io/"
+msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "Ajan synkronointi ei ole valmis, kun odotat voit tarkistaa kiertotapoja: https://runixinstall.readthedocs.io/"
 
 msgid "Mark/Unmark as nodatacow"
 msgstr "Merkitse/poista nodatacow merkintä"
@@ -1353,8 +1353,8 @@ msgid "No"
 msgstr ""
 
 #, fuzzy
-msgid "Archinstall help"
-msgstr "Archinstall kieli"
+msgid "runixinstall help"
+msgstr "runixinstall kieli"
 
 #, fuzzy
 msgid " (default)"
@@ -1536,8 +1536,8 @@ msgid "Disabled"
 msgstr ""
 
 #, fuzzy
-msgid "Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    Lähetä tämä ongelma (ja tiedosto) osoitteeseen https://github.com/archlinux/archinstall/issues"
+msgid "Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    Lähetä tämä ongelma (ja tiedosto) osoitteeseen https://github.com/archlinux/runixinstall/issues"
 
 #, fuzzy
 msgid "Mirror name"
@@ -1771,8 +1771,8 @@ msgid "Package group:"
 msgstr ""
 
 #, fuzzy
-msgid "Exit archinstall"
-msgstr "Archinstall kieli"
+msgid "Exit runixinstall"
+msgstr "runixinstall kieli"
 
 #, fuzzy
 msgid "Reboot system"

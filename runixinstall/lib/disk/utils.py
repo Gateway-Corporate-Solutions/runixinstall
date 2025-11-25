@@ -2,10 +2,10 @@ from pathlib import Path
 
 from pydantic import BaseModel
 
-from archinstall.lib.exceptions import DiskError, SysCallError
-from archinstall.lib.general import SysCommand
-from archinstall.lib.models.device import LsblkInfo
-from archinstall.lib.output import debug, warn
+from runixinstall.lib.exceptions import DiskError, SysCallError
+from runixinstall.lib.general import SysCommand
+from runixinstall.lib.models.device import LsblkInfo
+from runixinstall.lib.output import debug, warn
 
 
 class LsblkOutput(BaseModel):

@@ -12,25 +12,25 @@ There are only three modes in the ``disk_config`` option. They are described in 
 
    {
        "config_type": "pre_mounted_config",
-       "mountpoint": "/mnt/archinstall"
+       "mountpoint": "/mnt/runixinstall"
    }
 
 This mode will not perform any partitioning what so ever.
-Instead it relies on what's mounted manually by the user under ``/mnt/archinstall``.
+Instead it relies on what's mounted manually by the user under ``/mnt/runixinstall``.
 
 Given the following disk example:
 
 .. code-block::
 
-   /mnt/archinstall    (/dev/sda2)
+   /mnt/runixinstall    (/dev/sda2)
         ├── boot       (/dev/sda1)
         └── home       (/dev/sda3)
 
-Running ``archinstall --conf your.json --silent`` where the above JSON is configured. The disk will be left alone — and a working system will be installed to the above folders and mountpoints will be translated into the installed system.
+Running ``runixinstall --conf your.json --silent`` where the above JSON is configured. The disk will be left alone — and a working system will be installed to the above folders and mountpoints will be translated into the installed system.
 
 .. note::
 
-   Some disk layouts can be too complicated to detect, such as RAID setups. Please do report those setups on the `Issue Tracker <https://github.com/archlinux/archinstall>`__ so we can support them.
+   Some disk layouts can be too complicated to detect, such as RAID setups. Please do report those setups on the `Issue Tracker <https://github.com/archlinux/runixinstall>`__ so we can support them.
 
 Best Effort
 -----------
@@ -75,7 +75,7 @@ Manual Partitioning
         }
     }
 
-Manual partitioning is the most complex one of the three. It offers you near endless flexibility of how to partition your disk. It integrates against `pyparted <https://github.com/dcantrell/pyparted>`__ and some control logic in ``archinstall`` that deals with creating things like subvolumes and compression.
+Manual partitioning is the most complex one of the three. It offers you near endless flexibility of how to partition your disk. It integrates against `pyparted <https://github.com/dcantrell/pyparted>`__ and some control logic in ``runixinstall`` that deals with creating things like subvolumes and compression.
 
 Sizes are by default ``sector`` units, but other units are supported.
 
@@ -88,7 +88,7 @@ The options supplied to ``manual_partitioning`` are dictionary definitions, wher
    :header-rows: 1
 
 Each partition definition heavily relies on what filesystem is used.
-Below follow two of the more common filesystems, anything else will best be described by running ``archinstall`` to generate a desired configuration for the desired filesystem type — and copy the relevant parts for permanent configurations.
+Below follow two of the more common filesystems, anything else will best be described by running ``runixinstall`` to generate a desired configuration for the desired filesystem type — and copy the relevant parts for permanent configurations.
 
 .. warning::
 
@@ -131,7 +131,7 @@ FAT32
 
 .. note::
 
-   The ``Boot`` flag will make ``archinstall`` automatically set the correct ESP partition GUID if the system is booted with ``EFI`` support. The GUID will then be set to ``C12A7328-F81F-11D2-BA4B-00A0C93EC93B``.
+   The ``Boot`` flag will make ``runixinstall`` automatically set the correct ESP partition GUID if the system is booted with ``EFI`` support. The GUID will then be set to ``C12A7328-F81F-11D2-BA4B-00A0C93EC93B``.
 
 EXT4
 ^^^^

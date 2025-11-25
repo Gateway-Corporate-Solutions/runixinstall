@@ -1,17 +1,17 @@
 from typing import override
 
-from archinstall.lib.disk.fido import Fido2
-from archinstall.lib.interactions.manage_users_conf import ask_for_additional_users
-from archinstall.lib.menu.abstract_menu import AbstractSubMenu
-from archinstall.lib.models.authentication import AuthenticationConfiguration, U2FLoginConfiguration, U2FLoginMethod
-from archinstall.lib.models.users import Password, User
-from archinstall.lib.output import FormattedOutput
-from archinstall.lib.translationhandler import tr
-from archinstall.lib.utils.util import get_password
-from archinstall.tui.curses_menu import SelectMenu
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
-from archinstall.tui.result import ResultType
-from archinstall.tui.types import Alignment, FrameProperties, Orientation
+from runixinstall.lib.disk.fido import Fido2
+from runixinstall.lib.interactions.manage_users_conf import ask_for_additional_users
+from runixinstall.lib.menu.abstract_menu import AbstractSubMenu
+from runixinstall.lib.models.authentication import AuthenticationConfiguration, U2FLoginConfiguration, U2FLoginMethod
+from runixinstall.lib.models.users import Password, User
+from runixinstall.lib.output import FormattedOutput
+from runixinstall.lib.translationhandler import tr
+from runixinstall.lib.utils.util import get_password
+from runixinstall.tui.curses_menu import SelectMenu
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.tui.result import ResultType
+from runixinstall.tui.types import Alignment, FrameProperties, Orientation
 
 
 class AuthenticationMenu(AbstractSubMenu[AuthenticationConfiguration]):

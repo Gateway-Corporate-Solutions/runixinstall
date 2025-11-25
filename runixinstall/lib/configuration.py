@@ -3,11 +3,11 @@ import readline
 import stat
 from pathlib import Path
 
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import SelectMenu, Tui
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
-from archinstall.tui.result import ResultType
-from archinstall.tui.types import Alignment, FrameProperties, Orientation, PreviewStyle
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import SelectMenu, Tui
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.tui.result import ResultType
+from runixinstall.tui.types import Alignment, FrameProperties, Orientation, PreviewStyle
 
 from .args import ArchConfig
 from .crypt import encrypt
@@ -23,7 +23,7 @@ class ConfigurationOutput:
 		configuration data structure and prepare for output on the
 		console and for saving it to configuration files
 
-		:param config: Archinstall configuration object
+		:param config: runixinstall configuration object
 		:type config: ArchConfig
 		"""
 

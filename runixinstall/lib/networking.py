@@ -166,7 +166,7 @@ def build_icmp(payload: bytes) -> bytes:
 def ping(hostname: str, timeout: int = 5) -> int:
 	watchdog = select.epoll()
 	started = time.time()
-	random_identifier = f'archinstall-{random.randint(1000, 9999)}'.encode()
+	random_identifier = f'runixinstall-{random.randint(1000, 9999)}'.encode()
 
 	# Create a raw socket (requires root, which should be fine on archiso)
 	icmp_socket = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_ICMP)

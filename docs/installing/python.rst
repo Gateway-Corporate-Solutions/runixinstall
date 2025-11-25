@@ -3,25 +3,25 @@
 Python library
 ==============
 
-Archinstall ships on `PyPi <https://pypi.org/>`_ as `archinstall <pypi.org/project/archinstall/>`_.
+runixinstall ships on `PyPi <https://pypi.org/>`_ as `runixinstall <pypi.org/project/runixinstall/>`_.
 But the library can be installed manually as well.
 
 .. warning::
-    These steps are not required if you want to use archinstall on the official Arch Linux ISO.
+    These steps are not required if you want to use runixinstall on the official Arch Linux ISO.
 
 Installing with pacman
 ----------------------
 
-Archinstall is on the `official repositories <https://wiki.archlinux.org/index.php/Official_repositories>`_.
-And it will also install archinstall as a python library.
+runixinstall is on the `official repositories <https://wiki.archlinux.org/index.php/Official_repositories>`_.
+And it will also install runixinstall as a python library.
 
-To install both the library and the archinstall script:
+To install both the library and the runixinstall script:
 
 .. code-block:: console
 
-    pacman -S archinstall
+    pacman -S runixinstall
 
-Alternatively, you can install only the library and not the helper executable using the ``python-archinstall`` package.
+Alternatively, you can install only the library and not the helper executable using the ``python-runixinstall`` package.
 
 Installing from PyPI
 --------------------
@@ -30,7 +30,7 @@ The basic concept of PyPI applies using `pip`.
 
 .. code-block:: console
 
-    pip install archinstall
+    pip install runixinstall
 
 .. _installing.python.manual:
 
@@ -42,18 +42,18 @@ For sake of simplicity we will use ``git clone`` in this example.
 
 .. code-block:: console
 
-    git clone https://github.com/archlinux/archinstall
+    git clone https://github.com/archlinux/runixinstall
 
 You can either move the folder into your project and simply do
 
 .. code-block:: python
 
-    import archinstall
+    import runixinstall
 
 Or you can PyPa's `build <https://github.com/pypa/build>`_ and `installer <https://github.com/pypa/installer>`_ to install it into pythons module path.
 
 .. code-block:: console
 
-    $ cd archinstall
+    $ cd runixinstall
     $ python -m build .
     $ python -m installer dist/*.whl

@@ -5,7 +5,7 @@ from typing import Any, override
 
 from pydantic import BaseModel
 
-from archinstall.lib.translationhandler import tr
+from runixinstall.lib.translationhandler import tr
 
 
 class Repository(Enum):

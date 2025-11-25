@@ -1,8 +1,8 @@
 from pathlib import Path
 from typing import override
 
-from archinstall.lib.menu.menu_helper import MenuHelper
-from archinstall.lib.models.device import (
+from runixinstall.lib.menu.menu_helper import MenuHelper
+from runixinstall.lib.models.device import (
 	DeviceModification,
 	DiskEncryption,
 	EncryptionType,
@@ -10,11 +10,11 @@ from archinstall.lib.models.device import (
 	LvmVolume,
 	PartitionModification,
 )
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import EditMenu, SelectMenu
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
-from archinstall.tui.result import ResultType
-from archinstall.tui.types import Alignment, FrameProperties
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import EditMenu, SelectMenu
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.tui.result import ResultType
+from runixinstall.tui.types import Alignment, FrameProperties
 
 from ..menu.abstract_menu import AbstractSubMenu
 from ..models.device import DEFAULT_ITER_TIME, Fido2Device

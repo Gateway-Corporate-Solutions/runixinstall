@@ -1,12 +1,12 @@
 from typing import override
 
-from archinstall.lib.menu.abstract_menu import AbstractSubMenu
-from archinstall.lib.models.application import ApplicationConfiguration, Audio, AudioConfiguration, BluetoothConfiguration
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.curses_menu import SelectMenu
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
-from archinstall.tui.result import ResultType
-from archinstall.tui.types import Alignment, FrameProperties, Orientation
+from runixinstall.lib.menu.abstract_menu import AbstractSubMenu
+from runixinstall.lib.models.application import ApplicationConfiguration, Audio, AudioConfiguration, BluetoothConfiguration
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.curses_menu import SelectMenu
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.tui.result import ResultType
+from runixinstall.tui.types import Alignment, FrameProperties, Orientation
 
 
 class ApplicationMenu(AbstractSubMenu[ApplicationConfiguration]):

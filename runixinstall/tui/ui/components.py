@@ -11,10 +11,10 @@ from textual.events import Key
 from textual.screen import Screen
 from textual.widgets import Button, DataTable, Input, LoadingIndicator, Static
 
-from archinstall.lib.output import debug
-from archinstall.lib.translationhandler import tr
-from archinstall.tui.menu_item import MenuItem, MenuItemGroup
-from archinstall.tui.ui.result import Result, ResultType
+from runixinstall.lib.output import debug
+from runixinstall.lib.translationhandler import tr
+from runixinstall.tui.menu_item import MenuItem, MenuItemGroup
+from runixinstall.tui.ui.result import Result, ResultType
 
 ValueT = TypeVar('ValueT')
 

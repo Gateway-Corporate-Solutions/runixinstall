@@ -3,12 +3,12 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import TYPE_CHECKING, TypedDict
 
-from archinstall.default_profiles.profile import GreeterType, Profile
+from runixinstall.default_profiles.profile import GreeterType, Profile
 
 from ..hardware import GfxDriver
 
 if TYPE_CHECKING:
-	from archinstall.lib.profile.profiles_handler import ProfileSerialization
+	from runixinstall.lib.profile.profiles_handler import ProfileSerialization
 
 
 class _ProfileConfigurationSerialization(TypedDict):

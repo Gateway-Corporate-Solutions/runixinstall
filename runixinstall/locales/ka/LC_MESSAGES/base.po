@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: archinstall\n"
+"Project-Id-Version: runixinstall\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
@@ -15,8 +15,8 @@ msgstr ""
 msgid "[!] A log file has been created here: {} {}"
 msgstr "[!] ჟურნალის ფაილი შეიქმნა აქ: {} {}"
 
-msgid "    Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    ეს პრობლემა და ფაილი გადმოგვიგზავნეთ ბმულზე https://github.com/archlinux/archinstall/issues"
+msgid "    Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    ეს პრობლემა და ფაილი გადმოგვიგზავნეთ ბმულზე https://github.com/archlinux/runixinstall/issues"
 
 msgid "Do you really want to abort?"
 msgstr "გნებავთ, გააუქმოთ?"
@@ -170,8 +170,8 @@ msgstr ""
 msgid "Enter a desired filesystem type for the partition: "
 msgstr "შეიყვანეთ დანაყოფის სასურველი ფაილური სისტემის ტიპი: "
 
-msgid "Archinstall language"
-msgstr "Archinstall-ის ენა"
+msgid "runixinstall language"
+msgstr "runixinstall-ის ენა"
 
 msgid "Wipe all selected drives and use a best-effort default partition layout"
 msgstr "მონიშნულ დისკებზე ყველაფრის წაშლა და დანაყოფების განლაგების საუკეთესო განლაგების გამოყენება"
@@ -302,12 +302,12 @@ msgstr "დაყენება (აკლია {} კონფიგურა
 msgid ""
 "You decided to skip harddrive selection\n"
 "and will use whatever drive-setup is mounted at {} (experimental)\n"
-"WARNING: Archinstall won't check the suitability of this setup\n"
+"WARNING: runixinstall won't check the suitability of this setup\n"
 "Do you wish to continue?"
 msgstr ""
 "გადაწყვიტეთ, გამოტოვოთ მყარი დისკის არჩევანი\n"
 "და გამოიყენოთ ის, რაც {}-ზეა მიმაგრებული (ექსპერიმენტალური)\n"
-"გაფრთხილება: Archinstall-ს ამ მორგების სტაბილურობის გადამოწმება არ შეუძლია.\n"
+"გაფრთხილება: runixinstall-ს ამ მორგების სტაბილურობის გადამოწმება არ შეუძლია.\n"
 "გნებავთ, გააგრძელოთ?"
 
 msgid "Re-using partition instance: {}"
@@ -446,8 +446,8 @@ msgstr ""
 msgid "Pacman is already running, waiting maximum 10 minutes for it to terminate."
 msgstr "Pacman- უკვე გაშვებულია. მოკვლამდე 10 წუთი დაველოდები."
 
-msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using archinstall."
-msgstr "წინასწარ packman-ის ბლოკი არასდროს არსებობდა. Archinstall-ის დაყენებამდე აუცილებელია pacman-ს სესიების მოსუფთავება აუცილებელია."
+msgid "Pre-existing pacman lock never exited. Please clean up any existing pacman sessions before using runixinstall."
+msgstr "წინასწარ packman-ის ბლოკი არასდროს არსებობდა. runixinstall-ის დაყენებამდე აუცილებელია pacman-ს სესიების მოსუფთავება აუცილებელია."
 
 msgid "Choose which optional additional repositories to enable"
 msgstr "აირჩიეთ, რომელი არასავალდებულო დამატებითი რეპოზიტორია გნებავთ, ჩართოთ"
@@ -839,8 +839,8 @@ msgstr "თარგმანის გამოსაყენებლად �
 msgid "The font should be stored as {}"
 msgstr "ფონტი {}-ში უნდა იყოს შენახული"
 
-msgid "Archinstall requires root privileges to run. See --help for more."
-msgstr "Archinstall-ს გასაშვებად root მომხმარებლის პრივილეგიები სჭირდება. მეტი ინფორმაციისთვის იხილეთ --help."
+msgid "runixinstall requires root privileges to run. See --help for more."
+msgstr "runixinstall-ს გასაშვებად root მომხმარებლის პრივილეგიები სჭირდება. მეტი ინფორმაციისთვის იხილეთ --help."
 
 msgid "Select an execution mode"
 msgstr "აირჩიეთ შესრულების რეჟიმი"
@@ -1253,8 +1253,8 @@ msgstr "გაერთიანებული ბირთვის დის�
 msgid "Waiting for time sync (timedatectl show) to complete."
 msgstr "დროის სინქრონიზაციის (timedatectl show) დასრულების მოლოდინი."
 
-msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "დროის სინქრონიზაცია არ სრულდება. სანამ ელოდებით, შეამოწმეთ დოკუმენტაცია, როგორ აიცილოთ ეს თავიდან: https://archinstall.readthedocs.io/"
+msgid "Time syncronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "დროის სინქრონიზაცია არ სრულდება. სანამ ელოდებით, შეამოწმეთ დოკუმენტაცია, როგორ აიცილოთ ეს თავიდან: https://runixinstall.readthedocs.io/"
 
 msgid "Skipping waiting for automatic time sync (this can cause issues if time is out of sync during installation)"
 msgstr "ავტომატური დროის სინქრონიზაციის მოლოდინის გამოტოვება (ამას შეუძლია, პრობლემები გამოიწვიოს, თუ დრო დაყენებისას აირევა)"
@@ -1265,8 +1265,8 @@ msgstr "ველოდები Arch Linux-ის ბრელოკის ს�
 msgid "Selected profiles: "
 msgstr "მონიშნული პროფილები: "
 
-msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://archinstall.readthedocs.io/"
-msgstr "დროის სინქრონიზაცია არ სრულდება. სანამ ელოდებით, შეამოწმეთ დოკუმენტაცია, როგორ აიცილოთ ეს თავიდან: https://archinstall.readthedocs.io/"
+msgid "Time synchronization not completing, while you wait - check the docs for workarounds: https://runixinstall.readthedocs.io/"
+msgstr "დროის სინქრონიზაცია არ სრულდება. სანამ ელოდებით, შეამოწმეთ დოკუმენტაცია, როგორ აიცილოთ ეს თავიდან: https://runixinstall.readthedocs.io/"
 
 msgid "Mark/Unmark as nodatacow"
 msgstr "'nodatacow' ალმის დასმა/მოხსნა"
@@ -1341,8 +1341,8 @@ msgstr "დიახ"
 msgid "No"
 msgstr "არა"
 
-msgid "Archinstall help"
-msgstr "Archinstall-ის დახმარება"
+msgid "runixinstall help"
+msgstr "runixinstall-ის დახმარება"
 
 msgid " (default)"
 msgstr " (ნაგულისხმევი)"
@@ -1523,8 +1523,8 @@ msgid "Disabled"
 msgstr ""
 
 #, fuzzy
-msgid "Please submit this issue (and file) to https://github.com/archlinux/archinstall/issues"
-msgstr "    ეს პრობლემა და ფაილი გადმოგვიგზავნეთ ბმულზე https://github.com/archlinux/archinstall/issues"
+msgid "Please submit this issue (and file) to https://github.com/archlinux/runixinstall/issues"
+msgstr "    ეს პრობლემა და ფაილი გადმოგვიგზავნეთ ბმულზე https://github.com/archlinux/runixinstall/issues"
 
 #, fuzzy
 msgid "Mirror name"
@@ -1758,8 +1758,8 @@ msgid "Package group:"
 msgstr ""
 
 #, fuzzy
-msgid "Exit archinstall"
-msgstr "Archinstall-ის დახმარება"
+msgid "Exit runixinstall"
+msgstr "runixinstall-ის დახმარება"
 
 #, fuzzy
 msgid "Reboot system"
