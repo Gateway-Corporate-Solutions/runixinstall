@@ -93,10 +93,13 @@ def perform_installation(mountpoint: Path) -> None:
 			locale_config=locale_config,
 		)
 
+		os.system("echo \"[runix-packages]\" >> /etc/pacman.conf")
+		os.system("echo \"SigLevel = Optional TrustAll\" >> /etc/pacman.conf")
+		os.system("echo \"Server = file:///etc/repos\" >> /etc/pacman.conf")
+
 		os.system("cp /etc/pacman.conf /mnt/etc/pacman.conf")
 		os.system("mkdir -p /mnt/etc/repos")
 		os.system("cp -r /etc/repos/* /mnt/etc/repos/")
-		os.system("cp -r /etc/skel/* /mnt/etc/skel/")
 
 		if mirror_config := config.mirror_config:
 			installation.set_mirrors(mirror_config, on_target=True)
