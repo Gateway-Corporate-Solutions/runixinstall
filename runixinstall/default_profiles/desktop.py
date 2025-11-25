@@ -95,10 +95,10 @@ class DesktopProfile(Profile):
 			case ResultType.Reset:
 				return SelectResult.ResetCurrent
 
-	@override
-	def post_install(self, install_session: 'Installer') -> None:
-		for profile in self.current_selection:
-			profile.post_install(install_session)
+#	@override
+#	def post_install(self, install_session: 'Installer') -> None:
+#		for profile in self.current_selection:
+#			profile.post_install(install_session)
 
 	@override
 	def install(self, install_session: 'Installer') -> None:

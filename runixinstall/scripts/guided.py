@@ -164,8 +164,9 @@ def perform_installation(mountpoint: Path) -> None:
 			root_user = User('root', config.auth_config.root_enc_password, False)
 			installation.set_user_password(root_user)
 
-		if (profile_config := config.profile_config) and profile_config.profile:
-			profile_config.profile.post_install(installation)
+#		Disabled for now, as post_install is not implemented for profiles
+#		if (profile_config := config.profile_config) and profile_config.profile:
+#			profile_config.profile.post_install(installation)
 
 		# If the user provided a list of services to be enabled, pass the list to the enable_service function.
 		# Note that while it's called enable_service, it can actually take a list of services and iterate it.

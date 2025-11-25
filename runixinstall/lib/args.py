@@ -67,7 +67,7 @@ class ArchConfig:
 	bootloader_config: BootloaderConfiguration | None = None
 	app_config: ApplicationConfiguration | None = None
 	auth_config: AuthenticationConfiguration | None = None
-	hostname: str = 'archlinux'
+	hostname: str = 'runix'
 	kernels: list[str] = field(default_factory=lambda: ['linux'])
 	ntp: bool = True
 	packages: list[str] = field(default_factory=list)
