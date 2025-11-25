@@ -143,9 +143,9 @@ def perform_installation(mountpoint: Path) -> None:
 		if profile_config := config.profile_config:
 			profile_handler.install_profile_config(installation, profile_config)
 
-		installation.run_command("if pacman -Qi sddm > /dev/null 2>&1; then "
-			+ "echo \"[Theme]\" >> /etc/sddm.conf.d/theme.conf; "
-			+ "echo \"Current=breeze\" >> /etc/sddm.conf.d/theme.conf; "
+		os.system("if arch-chroot -S /mnt pacman -Qi sddm > /dev/null 2>&1; then "
+			+ "echo \"[Theme]\" >> /mnt/etc/sddm.conf.d/theme.conf; "
+			+ "echo \"Current=breeze\" >> /mnt/etc/sddm.conf.d/theme.conf; "
 			+ "fi")
 
 		if config.packages and config.packages[0] != '':
