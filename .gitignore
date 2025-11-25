@@ -41,3 +41,4 @@ requirements.txt
 /cmd_output.txt
 uv.lock
 runixinstall
+runixinstall-git
