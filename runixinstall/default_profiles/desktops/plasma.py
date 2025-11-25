@@ -25,11 +25,3 @@ class PlasmaProfile(XorgProfile):
 	@override
 	def default_greeter_type(self) -> GreeterType:
 		return GreeterType.Sddm
-	
-	@property
-	@override
-	def post_install(self, install_session: 'Installer') -> None:
-		install_session.run_command("mkdir -p /etc/sddm.conf.d")
-		install_session.run_command("echo \"[Theme]\" >> /etc/sddm.conf.d/theme.conf")
-		install_session.run_command("echo \"Current=breeze\" >> /etc/sddm.conf.d/theme.conf")
-		return super().post_install(install_session)
