@@ -134,8 +134,8 @@ def perform_installation(mountpoint: Path) -> None:
 					if user.username == 'root':
 						continue
 					installation.user_set_shell(user.username, "/bin/zsh")
-					os.system(f"cp -r /etc/userdefaults/* /home/{user.username}/")
-					os.system(f"chown -R {user.username}:{user.username} /home/{user.username}/")
+					os.system(f"cp -r /etc/userdefaults/* /mnt/home/{user.username}/")
+					os.system(f"chown -R {user.username}:{user.username} /mnt/home/{user.username}/")
 
 		if app_config := config.app_config:
 			application_handler.install_applications(installation, app_config)
@@ -144,6 +144,7 @@ def perform_installation(mountpoint: Path) -> None:
 			profile_handler.install_profile_config(installation, profile_config)
 
 		os.system("if arch-chroot -S /mnt pacman -Qi sddm > /dev/null 2>&1; then "
+			+ "mkdir -p /mnt/etc/sddm.conf.d; "
 			+ "echo \"[Theme]\" >> /mnt/etc/sddm.conf.d/theme.conf; "
 			+ "echo \"Current=breeze\" >> /mnt/etc/sddm.conf.d/theme.conf; "
 			+ "fi")
