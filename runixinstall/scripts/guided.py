@@ -134,6 +134,8 @@ def perform_installation(mountpoint: Path) -> None:
 					if user.username == 'root':
 						continue
 					installation.user_set_shell(user.username, "/bin/zsh")
+					os.system(f"cp -r /etc/userdefaults/* /home/{user.username}/")
+					os.system(f"chown -R {user.username}:{user.username} /home/{user.username}/")
 
 		if app_config := config.app_config:
 			application_handler.install_applications(installation, app_config)
