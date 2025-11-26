@@ -183,6 +183,8 @@ def perform_installation(mountpoint: Path) -> None:
 					continue
 				os.system(f"arch-chroot -S /mnt usermod --shell /bin/zsh {user.username}")
 				os.system(f"cp -r /usr/share/defaults/. /mnt/home/{user.username}/")
+				os.system(f"arch-chroot -S /mnt chown {user.username}:{user.username} /home/{user.username}/.zshrc")
+				os.system(f"arch-chroot -S /mnt chown {user.username}:{user.username} /home/{user.username}/.runixascii")
 
 		# If the user provided custom commands to be run post-installation, execute them now.
 		if cc := config.custom_commands:

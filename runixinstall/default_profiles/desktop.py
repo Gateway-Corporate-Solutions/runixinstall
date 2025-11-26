@@ -35,6 +35,7 @@ class DesktopProfile(Profile):
 			'wpa_supplicant',
 			'smartmontools',
 			'xdg-utils',
+			'ttf-hack-nerd',
 			'git',
 			'yay',
 			'zsh-syntax-highlighting-git',

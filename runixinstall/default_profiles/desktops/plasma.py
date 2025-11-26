@@ -7,7 +7,7 @@ from runixinstall.lib.installer import Installer
 
 class PlasmaProfile(XorgProfile):
 	def __init__(self) -> None:
-		super().__init__('KDE Plasma', ProfileType.DesktopEnv)
+		super().__init__('KDE Plasma (Recommended)', ProfileType.DesktopEnv)
 
 	@property
 	@override
