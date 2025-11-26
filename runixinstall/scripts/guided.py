@@ -130,11 +130,6 @@ def perform_installation(mountpoint: Path) -> None:
 			if config.auth_config.users:
 				installation.create_users(config.auth_config.users)
 				auth_handler.setup_auth(installation, config.auth_config, config.hostname)
-				for user in config.auth_config.users:
-					if user.username == 'root':
-						continue
-					os.system(f"arch-chroot -S /mnt usermod --shell /bin/zsh {user.username}")
-					os.system(f"cp -r /usr/share/defaults/. /mnt/home/{user.username}/")
 
 		if app_config := config.app_config:
 			application_handler.install_applications(installation, app_config)
@@ -180,6 +175,14 @@ def perform_installation(mountpoint: Path) -> None:
 			if snapshot_type:
 				bootloader = config.bootloader_config.bootloader if config.bootloader_config else None
 				installation.setup_btrfs_snapshot(snapshot_type, bootloader)
+
+		# Set Zsh as the default shell for all users except root
+		if config.auth_config and config.auth_config.users:
+			for user in config.auth_config.users:
+				if user.username == 'root':
+					continue
+				os.system(f"arch-chroot -S /mnt usermod --shell /bin/zsh {user.username}")
+				os.system(f"cp -r /usr/share/defaults/. /mnt/home/{user.username}/")
 
 		# If the user provided custom commands to be run post-installation, execute them now.
 		if cc := config.custom_commands:
