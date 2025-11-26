@@ -40,7 +40,6 @@ class DesktopProfile(Profile):
 			'eza',
 			'zoxide',
 			'pfetch',
-			'curl',
 			'git',
 			'nerd-fonts'
 		]
