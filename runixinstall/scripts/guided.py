@@ -130,12 +130,12 @@ def perform_installation(mountpoint: Path) -> None:
 			if config.auth_config.users:
 				installation.create_users(config.auth_config.users)
 				auth_handler.setup_auth(installation, config.auth_config, config.hostname)
-#				for user in config.auth_config.users:
-#					if user.username == 'root':
-#						continue
-#					os.system(f"arch-chroot -S /mnt usermod --shell /bin/zsh {user.username}")
-#					os.system(f"cp -r /usr/share/defaults/. /mnt/home/{user.username}/")
-#					os.system(f"arch-chroot -S /mnt chown -R {user.username}:{user.username} /home/{user.username}/")
+				for user in config.auth_config.users:
+					if user.username == 'root':
+						continue
+					os.system(f"arch-chroot -S /mnt usermod --shell /bin/zsh {user.username}")
+					os.system(f"cp -r /usr/share/defaults/. /mnt/home/{user.username}/")
+					os.system(f"arch-chroot -S /mnt chown -R {user.username}:{user.username} /home/{user.username}/")
 
 		if app_config := config.app_config:
 			application_handler.install_applications(installation, app_config)
