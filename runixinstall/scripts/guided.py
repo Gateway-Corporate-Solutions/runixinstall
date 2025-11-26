@@ -137,10 +137,11 @@ def perform_installation(mountpoint: Path) -> None:
 		if profile_config := config.profile_config:
 			profile_handler.install_profile_config(installation, profile_config)
 
-		os.system("if arch-chroot -S /mnt pacman -Qi sddm > /dev/null 2>&1; then "
+		os.system("if arch-chroot -S /mnt pacman -Qi plasma-workspace > /dev/null 2>&1; then "
 			+ "mkdir -p /mnt/etc/sddm.conf.d; "
 			+ "echo \"[Theme]\" >> /mnt/etc/sddm.conf.d/theme.conf; "
 			+ "echo \"Current=breeze\" >> /mnt/etc/sddm.conf.d/theme.conf; "
+			+ "arch-chroot -S /mnt systemctl enable NetworkManager.service; "
 			+ "fi")
 
 		if config.packages and config.packages[0] != '':
@@ -185,6 +186,8 @@ def perform_installation(mountpoint: Path) -> None:
 				os.system(f"cp -r /usr/share/defaults/. /mnt/home/{user.username}/")
 				os.system(f"arch-chroot -S /mnt chown {user.username}:{user.username} /home/{user.username}/.zshrc")
 				os.system(f"arch-chroot -S /mnt chown {user.username}:{user.username} /home/{user.username}/.runixascii")
+				os.system(f"arch-chroot -S /mnt chown {user.username}:{user.username} /home/{user.username}/install-oh-my-zsh.sh")
+				
 
 		# If the user provided custom commands to be run post-installation, execute them now.
 		if cc := config.custom_commands:
