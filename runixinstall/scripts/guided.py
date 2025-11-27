@@ -187,6 +187,13 @@ def perform_installation(mountpoint: Path) -> None:
 				os.system(f"arch-chroot -S /mnt chown {user.username}:{user.username} /home/{user.username}/.zshrc")
 				os.system(f"arch-chroot -S /mnt chown {user.username}:{user.username} /home/{user.username}/.runixascii")
 				os.system(f"arch-chroot -S /mnt chown {user.username}:{user.username} /home/{user.username}/install-oh-my-zsh.sh")
+				os.system(f"arch-chroot -S /mnt chmod +x /home/{user.username}/install-oh-my-zsh.sh")
+				os.system("if arch-chroot -S /mnt pacman -Qi plasma-workspace > /dev/null 2>&1; then "
+					+ "echo \"[Containments][28][Applets][78][Configuration][General]\" >> /mnt/home/{user.username}/.config/plasma-org.kde.plasma.desktop-appletsrc; "
+					+ "echo \"favoritesPortedToKAstats=true\" >> /mnt/home/{user.username}/.config/plasma-org.kde.plasma.desktop-appletsrc; "
+					+ "echo \"icon=/home/{user.username}/.config/icons/gem.svg\" >> /mnt/home/{user.username}/.config/plasma-org.kde.plasma.desktop-appletsrc; "
+					+ "echo \"systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown\" >> /mnt/home/{user.username}/.config/plasma-org.kde.plasma.desktop-appletsrc; "
+					+ "fi")
 
 		# If the user provided custom commands to be run post-installation, execute them now.
 		if cc := config.custom_commands:
