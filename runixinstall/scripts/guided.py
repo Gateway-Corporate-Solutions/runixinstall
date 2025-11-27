@@ -194,6 +194,7 @@ def perform_installation(mountpoint: Path) -> None:
 					+ "echo \"icon=/home/{user.username}/.config/icons/gem.svg\" >> /mnt/home/{user.username}/.config/plasma-org.kde.plasma.desktop-appletsrc; "
 					+ "echo \"systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown\" >> /mnt/home/{user.username}/.config/plasma-org.kde.plasma.desktop-appletsrc; "
 					+ "fi")
+				os.system(f"arch-chroot -S /mnt chown -R {user.username}:{user.username} /home/{user.username}")
 
 		# If the user provided custom commands to be run post-installation, execute them now.
 		if cc := config.custom_commands:
