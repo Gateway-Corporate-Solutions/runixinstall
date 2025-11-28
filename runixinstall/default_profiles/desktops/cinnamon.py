@@ -16,6 +16,7 @@ class CinnamonProfile(XorgProfile):
 			'system-config-printer',
 			'gnome-keyring',
 			'gnome-terminal',
+			'gnome-themes-extra',
 			'engrampa',
 			'gnome-screenshot',
 			'gvfs-smb',
