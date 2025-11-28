@@ -143,6 +143,10 @@ def perform_installation(mountpoint: Path) -> None:
 			+ "echo \"Current=breeze\" >> /mnt/etc/sddm.conf.d/theme.conf; "
 			+ "arch-chroot -S /mnt systemctl enable NetworkManager.service; "
 			+ "fi")
+		
+		os.system("if arch-chroot -S /mnt pacman -Qi cinnamon > /dev/null 2>&1; then "
+			+ "arch-chroot -S /mnt systemctl enable NetworkManager.service; "
+			+ "fi")
 
 		if config.packages and config.packages[0] != '':
 			installation.add_additional_packages(config.packages)
