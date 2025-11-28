@@ -41,6 +41,8 @@ class DesktopProfile(Profile):
 			'zsh-syntax-highlighting-git',
 			'eza',
 			'zoxide',
+			'ripgrep-git',
+			'fd',
 			'pfetch'
 		]
 
