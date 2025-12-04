@@ -141,13 +141,13 @@ def perform_installation(mountpoint: Path) -> None:
 			+ "arch-chroot -S /mnt systemctl enable NetworkManager.service; "
 			+ "fi")
 		
+		os.system("if arch-chroot -S /mnt pacman -Qi cinnamon > /dev/null 2>&1; then "
+			+ "arch-chroot -S /mnt systemctl enable NetworkManager.service; "
+			+ "fi")
+		
 		os.system("if arch-chroot -S /mnt pacman -Qi breeze > /dev/null 2>&1; then "
 			+ "mkdir -p /mnt/etc/sddm.conf.d; "
 			+ "echo \"[Theme]\nCurrent=breeze\" >> /mnt/etc/sddm.conf.d/theme.conf; "
-			+ "fi")
-		
-		os.system("if arch-chroot -S /mnt pacman -Qi cinnamon > /dev/null 2>&1; then "
-			+ "arch-chroot -S /mnt systemctl enable NetworkManager.service; "
 			+ "fi")
 
 		if config.packages and config.packages[0] != '':
