@@ -3,15 +3,15 @@
 
 <!-- </div> -->
 # Arch Installer
-[![Lint Python and Find Syntax Errors](https://github.com/archlinux/runixinstall/actions/workflows/flake8.yaml/badge.svg)](https://github.com/archlinux/runixinstall/actions/workflows/flake8.yaml)
+[![Lint Python and Find Syntax Errors](https://github.com/Gateway-Corporate-Solutions/runixinstall/actions/workflows/flake8.yaml/badge.svg)](https://github.com/archlinux/runixinstall/actions/workflows/flake8.yaml)
 
 Just another guided/automated [Arch Linux](https://wiki.archlinux.org/index.php/Arch_Linux) installer with a twist.
 The installer also doubles as a python library to install Arch Linux and manage services, packages, and other things inside the installed system *(Usually from a live medium)*.
 
-* runixinstall [discord](https://discord.gg/aDeMffrxNg) server
-* runixinstall [#runixinstall:matrix.org](https://matrix.to/#/#runixinstall:matrix.org) Matrix channel
-* runixinstall [#runixinstall@irc.libera.chat:6697](https://web.libera.chat/?channel=#runixinstall)
-* runixinstall [documentation](https://runixinstall.archlinux.page/)
+* archinstall [discord](https://discord.gg/aDeMffrxNg) server
+* archinstall [#archinstall:matrix.org](https://matrix.to/#/#archinstall:matrix.org) Matrix channel
+* archinstall [#archinstall@irc.libera.chat:6697](https://web.libera.chat/?channel=#archinstall)
+* archinstall [documentation](https://runixinstall.archlinux.page/)
 
 # Installation & Usage
 > [!TIP]
@@ -25,14 +25,14 @@ The installer also doubles as a python library to install Arch Linux and manage 
 
 Alternative ways to install are `git clone` the repository or `pip install --upgrade runixinstall`.
 
-## Running the [guided](https://github.com/archlinux/runixinstall/blob/master/runixinstall/scripts/guided.py) installer
+## Running the [guided](https://github.com/Gateway-Corporate-Solutions/runixinstall/blob/master/runixinstall/scripts/guided.py) installer
 
 Assuming you are on an Arch Linux live-ISO or installed via `pip`:
 ```shell
 runixinstall
 ```
 
-## Running the [guided](https://github.com/archlinux/runixinstall/blob/master/runixinstall/scripts/guided.py) installer using `git`
+## Running the [guided](https://github.com/Gateway-Corporate-Solutions/runixinstall/blob/master/runixinstall/scripts/guided.py) installer using `git`
 
 ```shell
     # cd runixinstall-git
