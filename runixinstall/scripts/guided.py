@@ -138,10 +138,12 @@ def perform_installation(mountpoint: Path) -> None:
 			profile_handler.install_profile_config(installation, profile_config)
 
 		os.system("if arch-chroot -S /mnt pacman -Qi plasma-workspace > /dev/null 2>&1; then "
-			+ "mkdir -p /mnt/etc/sddm.conf.d; "
-			+ "echo \"[Theme]\" >> /mnt/etc/sddm.conf.d/theme.conf; "
-			+ "echo \"Current=breeze\" >> /mnt/etc/sddm.conf.d/theme.conf; "
 			+ "arch-chroot -S /mnt systemctl enable NetworkManager.service; "
+			+ "fi")
+		
+		os.system("if arch-chroot -S /mnt pacman -Qi breeze > /dev/null 2>&1; then "
+			+ "mkdir -p /mnt/etc/sddm.conf.d; "
+			+ "echo \"[Theme]\nCurrent=breeze\" >> /mnt/etc/sddm.conf.d/theme.conf; "
 			+ "fi")
 		
 		os.system("if arch-chroot -S /mnt pacman -Qi cinnamon > /dev/null 2>&1; then "
